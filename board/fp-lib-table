@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Module_RaspberryPi_Pico")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Module_RaspberryPi_Pico.pretty")(options "")(descr ""))
+  (lib (name "RP2040-Zero")(type "KiCad")(uri "${KIPRJMOD}/Footprints/RP2040-Zero.pretty")(options "")(descr ""))
+  (lib (name "MX1A-C1NN")(type "KiCad")(uri "${KIPRJMOD}/Footprints/MX1A-C1NN.pretty")(options "")(descr ""))
+)
