@@ -12,6 +12,9 @@ from adafruit_midi.control_change import ControlChange
 from adafruit_midi.note_off import NoteOff
 from adafruit_midi.note_on import NoteOn
 from adafruit_midi.pitch_bend import PitchBend
+from digitalio import DigitalInOut, Direction, Pull
+
+
 
 skyNotes = [60, 62, 64, 65, 67, 69, 71, 72, 74, 76, 77, 79, 81, 83, 84]
 
@@ -30,12 +33,21 @@ last_position = None
 
 print(usb_midi.ports)
 midi = adafruit_midi.MIDI(
-    midi_in=usb_midi.ports[0], in_channel=0, midi_out=usb_midi.ports[1], out_channel=0
+    midi_in=usb_midi.ports[0],
+    in_channel=0,
+    midi_out=usb_midi.ports[1],
+    out_channel=0
 )
 
 print("Default output channel:", midi.out_channel + 1)
 
 print("Listening on input channel:", midi.in_channel + 1)
+
+btn = DigitalInOut(board.GP15)
+btn.direction = Direction.INPUT
+btn.pull = Pull.UP
+
+prev_state = btn.value
 
 while True:
     position = enc.position
@@ -43,7 +55,7 @@ while True:
 
     event = km.events.get()
     if event:
-        #keys[event.key_number] = event.pressed
+        # keys[event.key_number] = event.pressed
 
         note = skyNotes[event.key_number] + octaveOffset
         if event.pressed:
@@ -51,14 +63,23 @@ while True:
         elif not event.pressed:
             midi.send(NoteOff(note, 120))
 
-
-    if last_position == None or position != last_position:
+    if last_position is None or position != last_position:
         print(position)
     last_position = position
 
     msg = midi.receive()
     if msg is not None:
         print("Received:", msg, "at", time.monotonic())
+
+    cur_state = btn.value
+    if cur_state != prev_state:
+        if not cur_state:
+            enc.position = 0
+        else:
+            #print("BTN is up")
+            pass
+
+    prev_state = cur_state
 
 
 
