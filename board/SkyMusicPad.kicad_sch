@@ -1283,6 +1283,31 @@
     )
   )
 
+  (symbol (lib_id "power:GND") (at 191.77 120.65 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 3fa48912-4e0d-4b0c-9897-38ec7f740365)
+    (property "Reference" "#PWR04" (at 185.42 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 187.96 120.65 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 191.77 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 191.77 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7b5e16bb-cbae-497f-b3e5-14159aea828f))
+    (instances
+      (project "SkyMusicPad"
+        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+          (reference "#PWR04") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 222.25 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 47919d9a-fddc-4b7c-baaa-7906b006e033)
@@ -1879,31 +1904,6 @@
       (project "SkyMusicPad"
         (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
           (reference "D7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 191.77 120.65 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid bb4e4162-3426-4c61-83ab-b454ddfe8bde)
-    (property "Reference" "#PWR04" (at 195.58 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 187.96 120.65 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 191.77 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 191.77 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 051fb06f-3272-4a81-8d9a-7bc6e30d4db0))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "#PWR04") (unit 1)
         )
       )
     )
