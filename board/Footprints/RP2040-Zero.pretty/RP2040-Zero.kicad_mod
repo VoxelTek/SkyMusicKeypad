@@ -58,4 +58,9 @@
   (pad "30" thru_hole roundrect (at 2.54 -17.78) (size 2.6 1.6002) (drill 0.8 (offset -0.6 0)) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.25) (tstamp 14094ad2-b562-4efa-8c6f-51d7a3134345))
   (pad "31" thru_hole roundrect (at 2.54 -20.32) (size 2.6 1.6002) (drill 0.8 (offset -0.6 0)) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.25) (tstamp bd793ae5-cde5-43f6-8def-1f95f35b1be6))
   (pad "32" thru_hole roundrect (at 2.54 -22.86) (size 2.6 1.6002) (drill 0.8 (offset -0.6 0)) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.25) (tstamp 07d160b6-23e1-4aa0-95cb-440482e6fc15))
+  (model "${KIPRJMOD}/3D/RP2040-Zero/RP2040-ZERO-WAVESHARE without headers.STEP"
+    (offset (xyz 10.15 12.7 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
