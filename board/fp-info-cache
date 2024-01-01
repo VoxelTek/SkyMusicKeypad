@@ -1,4 +1,4 @@
-21913384264445292
+21915125116224410
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59794,7 +59794,14 @@ LED RGB NeoPixel Nano PLCC-4
 4
 4
 LED_SMD
-LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm
+LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm_1
+3.5mm x 3.5mm PLCC4 Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf
+LED RGB NeoPixel Mini PLCC-4 3535
+0
+4
+4
+LED_SMD
+LED_SK6812MINI_REVERSE_PLCC4_3.5x3.5mm_P1.75mm
 3.5mm x 3.5mm PLCC4 Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf
 LED RGB NeoPixel Mini PLCC-4 3535
 0
