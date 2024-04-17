@@ -696,7 +696,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "SkyMusicPad.step",
       "svg": "",
       "vrml": ""
     },
