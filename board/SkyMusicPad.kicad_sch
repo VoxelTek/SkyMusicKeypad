@@ -1,2241 +1,6344 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 892c3dfc-ea33-45ad-8367-abbb3e31e120)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Device:D_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (at -1.27 2.032 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "D_Small" (at -3.81 -2.032 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Sim.Device" "D" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Sim.Pins" "1=K 2=A" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "diode" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Diode, small symbol" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "D_Small_0_1"
-        (polyline
-          (pts
-            (xy -0.762 -1.016)
-            (xy -0.762 1.016)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.762 0)
-            (xy 0.762 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.762 -1.016)
-            (xy -0.762 0)
-            (xy 0.762 1.016)
-            (xy 0.762 -1.016)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "D_Small_1_1"
-        (pin passive line (at -2.54 0 0) (length 1.778)
-          (name "K" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 2.54 0 180) (length 1.778)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:RotaryEncoder_Switch" (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "SW1" (at 0 10.16 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "RotaryEncoder_Switch" (at 0 7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Rotary_Encoder:RotaryEncoder_Bourns_Vertical_PEC12R-3xxxF-Sxxxx" (at -3.81 4.064 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 6.604 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "rotary switch encoder switch push button" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "RotaryEncoder*Switch*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "RotaryEncoder_Switch_0_1"
-        (rectangle (start -5.08 5.08) (end 5.08 -5.08)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (circle (center -3.81 0) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (circle (center -0.381 0) (radius 1.905)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (arc (start -0.381 2.667) (mid -3.0988 -0.0635) (end -0.381 -2.794)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.635 -1.778)
-            (xy -0.635 1.778)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.381 -1.778)
-            (xy -0.381 1.778)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.127 1.778)
-            (xy -0.127 -1.778)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.81 0)
-            (xy 3.429 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.81 1.016)
-            (xy 3.81 -1.016)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -5.08 -2.54)
-            (xy -3.81 -2.54)
-            (xy -3.81 -2.032)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -5.08 2.54)
-            (xy -3.81 2.54)
-            (xy -3.81 2.032)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.254 -3.048)
-            (xy -0.508 -2.794)
-            (xy 0.127 -2.413)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.254 2.921)
-            (xy -0.508 2.667)
-            (xy 0.127 2.286)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 5.08 -2.54)
-            (xy 4.318 -2.54)
-            (xy 4.318 -1.016)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 5.08 2.54)
-            (xy 4.318 2.54)
-            (xy 4.318 1.016)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -5.08 0)
-            (xy -3.81 0)
-            (xy -3.81 -1.016)
-            (xy -3.302 -2.032)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -4.318 0)
-            (xy -3.81 0)
-            (xy -3.81 1.016)
-            (xy -3.302 2.032)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 4.318 -1.016) (radius 0.127)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (circle (center 4.318 1.016) (radius 0.127)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "RotaryEncoder_Switch_1_1"
-        (pin passive line (at -7.62 2.54 0) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "A" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -7.62 -2.54 0) (length 2.54)
-          (name "B" (effects (font (size 1.27 1.27))))
-          (number "B" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -7.62 0 0) (length 2.54)
-          (name "C" (effects (font (size 1.27 1.27))))
-          (number "C" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 2.54 180) (length 2.54)
-          (name "S1" (effects (font (size 1.27 1.27))))
-          (number "S1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 -2.54 180) (length 2.54)
-          (name "S2" (effects (font (size 1.27 1.27))))
-          (number "S2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -7.62 90) (length 2.54)
-          (name "Shell_Ground" (effects (font (size 1.27 1.27))))
-          (number "SH" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "MX1A-C1NN:MX1A-C1NN" (in_bom yes) (on_board yes)
-      (property "Reference" "S" (at 16.51 7.62 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Value" "MX1A-C1NN" (at 16.51 5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Footprint" "MX1A-C1NN:MX1AC1NN" (at 16.51 -94.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 16.51 -194.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Height" "15.2" (at 16.51 -394.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Mouser Part Number" "540-MX1A-C1NN" (at 16.51 -494.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 16.51 -594.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Manufacturer_Name" "Cherry" (at 16.51 -694.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 16.51 -794.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "ki_description" "Pushbutton Switches Full Travel, Mech. Keyswitch Tactile Feel (Clear stem), 65cN No LED, No Diode Frame Mount (no fixation pins)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MX1A-C1NN_1_1"
-        (rectangle (start 5.08 2.54) (end 15.24 -2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at 0 0 0) (length 5.08)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 20.32 0 180) (length 5.08)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+3.3V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+3.3V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+3.3V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3.3V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+5V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+5V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+5V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+5V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "rp2040-zero:RP2040-Zero" (in_bom yes) (on_board yes)
-      (property "Reference" "RZ" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "RP2040-Zero" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "RP2040-Zero:RP2040-Zero" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "RP2040-Zero_0_1"
-        (rectangle (start -11.43 -15.24) (end 12.7 13.97)
-          (stroke (width 0) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "RP2040-Zero_1_1"
-        (pin bidirectional line (at -13.97 10.16 0) (length 2.54)
-          (name "GP0" (effects (font (size 1.27 1.27))))
-          (number "0" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -13.97 7.62 0) (length 2.54)
-          (name "GP1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 -12.7 180) (length 2.54)
-          (name "GP10" (effects (font (size 1.27 1.27))))
-          (number "10" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 -10.16 180) (length 2.54)
-          (name "GP11" (effects (font (size 1.27 1.27))))
-          (number "11" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 -7.62 180) (length 2.54)
-          (name "GP12" (effects (font (size 1.27 1.27))))
-          (number "12" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 -5.08 180) (length 2.54)
-          (name "GP13" (effects (font (size 1.27 1.27))))
-          (number "13" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 -2.54 180) (length 2.54)
-          (name "GP14" (effects (font (size 1.27 1.27))))
-          (number "14" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 0 180) (length 2.54)
-          (name "GP15" (effects (font (size 1.27 1.27))))
-          (number "15" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -13.97 5.08 0) (length 2.54)
-          (name "GP2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 2.54 180) (length 2.54)
-          (name "GP26" (effects (font (size 1.27 1.27))))
-          (number "26" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 5.08 180) (length 2.54)
-          (name "GP27" (effects (font (size 1.27 1.27))))
-          (number "27" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 7.62 180) (length 2.54)
-          (name "GP28" (effects (font (size 1.27 1.27))))
-          (number "28" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 10.16 180) (length 2.54)
-          (name "GP29" (effects (font (size 1.27 1.27))))
-          (number "29" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -13.97 2.54 0) (length 2.54)
-          (name "GP3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 1.27 16.51 270) (length 2.54)
-          (name "3V3" (effects (font (size 1.27 1.27))))
-          (number "30" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -17.78 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "31" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -1.27 16.51 270) (length 2.54)
-          (name "5V" (effects (font (size 1.27 1.27))))
-          (number "32" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -13.97 0 0) (length 2.54)
-          (name "GP4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -13.97 -2.54 0) (length 2.54)
-          (name "GP5" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -13.97 -5.08 0) (length 2.54)
-          (name "GP6" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -13.97 -7.62 0) (length 2.54)
-          (name "GP7" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -13.97 -10.16 0) (length 2.54)
-          (name "GP8" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -13.97 -12.7 0) (length 2.54)
-          (name "GP9" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 242.57 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid 2ea993ce-ccd1-4b3c-9e05-93f8956e02f1)
-  )
-  (junction (at 149.86 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid 4f17778a-3203-4c0f-ab98-e770c9d531d7)
-  )
-  (junction (at 210.82 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid aa868dad-7c88-4ee8-bdba-1f8c50675e45)
-  )
-  (junction (at 180.34 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid b97c4558-8223-46a8-8d9c-1f970149e56f)
-  )
-  (junction (at 119.38 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid f4bb8032-88d7-48a4-b0eb-1866c371316f)
-  )
-
-  (wire (pts (xy 180.34 62.23) (xy 180.34 73.66))
-    (stroke (width 0) (type default))
-    (uuid 0b24de2f-4599-4584-aa6c-b3f811ed8b34)
-  )
-  (wire (pts (xy 242.57 62.23) (xy 242.57 73.66))
-    (stroke (width 0) (type default))
-    (uuid 0f2e5a3c-bdba-470a-9ed1-ef4375362d35)
-  )
-  (wire (pts (xy 121.92 62.23) (xy 124.46 62.23))
-    (stroke (width 0) (type default))
-    (uuid 1a788290-1068-4793-8794-67a75f9fe020)
-  )
-  (wire (pts (xy 191.77 121.92) (xy 177.8 121.92))
-    (stroke (width 0) (type default))
-    (uuid 1d6c8178-1949-4a31-b0ac-6cbc32648301)
-  )
-  (wire (pts (xy 214.63 85.09) (xy 217.17 85.09))
-    (stroke (width 0) (type default))
-    (uuid 47a0d3e2-b672-4ad5-a8d1-10c9a0081ab7)
-  )
-  (wire (pts (xy 152.4 62.23) (xy 154.94 62.23))
-    (stroke (width 0) (type default))
-    (uuid 48ae5483-5d22-4da9-8c5e-4ade2ed1723a)
-  )
-  (wire (pts (xy 119.38 62.23) (xy 119.38 73.66))
-    (stroke (width 0) (type default))
-    (uuid 5061c00f-c229-40ae-942c-68f84a3c17d6)
-  )
-  (wire (pts (xy 191.77 123.19) (xy 191.77 121.92))
-    (stroke (width 0) (type default))
-    (uuid 5acd83b1-57a7-4f25-8409-10452979f327)
-  )
-  (wire (pts (xy 207.01 118.11) (xy 207.01 114.3))
-    (stroke (width 0) (type default))
-    (uuid 78173e90-3bc2-4bd9-ada5-f940ef32acb4)
-  )
-  (wire (pts (xy 152.4 73.66) (xy 154.94 73.66))
-    (stroke (width 0) (type default))
-    (uuid 787a812d-68b7-47ca-9fdc-4a8f3d0eb9d5)
-  )
-  (wire (pts (xy 119.38 73.66) (xy 119.38 85.09))
-    (stroke (width 0) (type default))
-    (uuid 824608ce-033d-4cda-b955-4bb4400b0cf0)
-  )
-  (wire (pts (xy 191.77 119.38) (xy 177.8 119.38))
-    (stroke (width 0) (type default))
-    (uuid 8964d4f7-fe83-4842-ac65-6b2cdcdb8fbb)
-  )
-  (wire (pts (xy 180.34 73.66) (xy 180.34 85.09))
-    (stroke (width 0) (type default))
-    (uuid 8adf4741-6f06-41a7-99e6-37332f896bc9)
-  )
-  (wire (pts (xy 210.82 73.66) (xy 210.82 85.09))
-    (stroke (width 0) (type default))
-    (uuid 8be76573-3f74-4928-8c26-83bc258eaf3b)
-  )
-  (wire (pts (xy 214.63 62.23) (xy 217.17 62.23))
-    (stroke (width 0) (type default))
-    (uuid 8bf0c6cb-30d9-47aa-8246-45c8171e4f81)
-  )
-  (wire (pts (xy 152.4 85.09) (xy 154.94 85.09))
-    (stroke (width 0) (type default))
-    (uuid 96ea244e-bdf1-493b-b2e3-80d7ae9ecff1)
-  )
-  (wire (pts (xy 242.57 73.66) (xy 242.57 85.09))
-    (stroke (width 0) (type default))
-    (uuid 99e2dd02-46ac-4f3c-951c-e8320e96db29)
-  )
-  (wire (pts (xy 190.5 116.84) (xy 177.8 116.84))
-    (stroke (width 0) (type default))
-    (uuid 9f15120b-477d-4359-8079-2c5247811747)
-  )
-  (wire (pts (xy 91.44 62.23) (xy 93.98 62.23))
-    (stroke (width 0) (type default))
-    (uuid a490eeaf-14a1-4159-9324-aecce161361e)
-  )
-  (wire (pts (xy 207.01 114.3) (xy 190.5 114.3))
-    (stroke (width 0) (type default))
-    (uuid ae737535-db23-48be-a7f7-4ece97ee0fa0)
-  )
-  (wire (pts (xy 210.82 62.23) (xy 210.82 73.66))
-    (stroke (width 0) (type default))
-    (uuid bb4a6570-bbc2-42fe-8ed5-7845a8334314)
-  )
-  (wire (pts (xy 191.77 118.11) (xy 191.77 119.38))
-    (stroke (width 0) (type default))
-    (uuid bccbab88-1757-4f42-be6e-495c2cb16a18)
-  )
-  (wire (pts (xy 149.86 73.66) (xy 149.86 85.09))
-    (stroke (width 0) (type default))
-    (uuid bd97e300-99b2-4b0c-b8d0-e5bc58a6be8a)
-  )
-  (wire (pts (xy 182.88 73.66) (xy 185.42 73.66))
-    (stroke (width 0) (type default))
-    (uuid c08edbcd-8dfb-4a12-9005-e149d92e4338)
-  )
-  (wire (pts (xy 91.44 73.66) (xy 93.98 73.66))
-    (stroke (width 0) (type default))
-    (uuid c5df52d8-77bc-4183-9a29-d60780b3a3a0)
-  )
-  (wire (pts (xy 182.88 85.09) (xy 185.42 85.09))
-    (stroke (width 0) (type default))
-    (uuid d1a8e0cf-256c-4c5c-b113-059ac481ebb9)
-  )
-  (wire (pts (xy 121.92 85.09) (xy 124.46 85.09))
-    (stroke (width 0) (type default))
-    (uuid d3d39b80-d8a4-4723-9ce4-307d0d4321fd)
-  )
-  (wire (pts (xy 182.88 62.23) (xy 185.42 62.23))
-    (stroke (width 0) (type default))
-    (uuid db251c33-1c0e-4a2f-997f-9f4b8c15a097)
-  )
-  (wire (pts (xy 149.86 62.23) (xy 149.86 73.66))
-    (stroke (width 0) (type default))
-    (uuid dd50de9a-5edd-4999-9b07-bf4563a962be)
-  )
-  (wire (pts (xy 121.92 73.66) (xy 124.46 73.66))
-    (stroke (width 0) (type default))
-    (uuid e2a55137-b130-4358-a166-06fc849fbc56)
-  )
-  (wire (pts (xy 190.5 114.3) (xy 190.5 116.84))
-    (stroke (width 0) (type default))
-    (uuid e321a469-ae34-4b82-9215-fa9f1a6321f3)
-  )
-  (wire (pts (xy 214.63 73.66) (xy 217.17 73.66))
-    (stroke (width 0) (type default))
-    (uuid f7d5db72-4329-4d6e-8156-e92cb7c8642e)
-  )
-  (wire (pts (xy 91.44 85.09) (xy 93.98 85.09))
-    (stroke (width 0) (type default))
-    (uuid ffa44855-5a05-4edd-bb81-205b4d63c6af)
-  )
-
-  (global_label "Row2" (shape input) (at 182.88 85.09 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 07a69d34-fb37-42b4-a895-025d4c1590d5)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 182.88 77.1458 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Row2" (shape input) (at 121.92 85.09 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 1db9ffcd-dffe-4d5d-9119-0a5060459e90)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 121.92 77.1458 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Col1" (shape input) (at 148.59 119.38 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 29cbe11c-f43d-4a47-952e-d33496ae58a5)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 141.3111 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Row1" (shape input) (at 214.63 73.66 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 37e44985-3bdb-48a6-80c6-fec3528759e3)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 214.63 65.7158 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Row1" (shape input) (at 177.8 127 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 39821f8f-5e31-44ec-8433-27978c0829cd)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 185.7442 127 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Row1" (shape input) (at 152.4 73.66 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 3a229c54-5992-430e-952b-47af8b01274d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 152.4 65.7158 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Row2" (shape input) (at 214.63 85.09 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 3a7b828f-3ab4-489b-9cb5-71f806e2202f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 214.63 77.1458 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Col3" (shape input) (at 210.82 85.09 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 3d7bdfc9-f98b-40ca-970f-6a73f08e1875)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 210.82 92.3689 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Row0" (shape input) (at 121.92 62.23 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 650d0479-8bcb-4e01-8db9-d5a1fad283af)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 121.92 54.2858 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Row1" (shape input) (at 182.88 73.66 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 678bdda2-6bcc-4d11-b0c8-77e7c74bdba8)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 182.88 65.7158 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Row1" (shape input) (at 121.92 73.66 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 71563c98-461b-4504-a934-86307cfe2c1b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 121.92 65.7158 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Row2" (shape input) (at 177.8 129.54 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 7223003e-70d6-49db-b4f7-7825851d4f71)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 185.7442 129.54 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Row1" (shape input) (at 91.44 73.66 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 74291296-f5d9-4f53-bcd3-3ccbfda5dfc6)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 91.44 65.7158 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Row0" (shape input) (at 177.8 124.46 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 8fb29e2f-a9f9-4daf-9c90-c41f1a069346)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 185.7442 124.46 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Col2" (shape input) (at 148.59 116.84 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 92425a69-46db-4b6c-a4bc-7ea2d561fd1b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 141.3111 116.84 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Col2" (shape input) (at 180.34 85.09 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid a714b116-8e1e-4d41-aa01-1ff01ace71aa)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 92.3689 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Col0" (shape input) (at 119.38 85.09 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid bf81e092-8f31-4b7c-8874-4e3721401f1c)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 92.3689 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Row0" (shape input) (at 152.4 62.23 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid c6701fc1-6818-4479-9561-3f3f897001ee)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 152.4 54.2858 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Col4" (shape input) (at 242.57 85.09 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid cd32e97e-fe6f-4b32-8726-a417c69f9aa1)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 242.57 92.3689 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Col0" (shape input) (at 148.59 121.92 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid d092d206-c6aa-43ac-abdd-81e8a746b19f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 141.3111 121.92 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Row0" (shape input) (at 214.63 62.23 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid d2bb744b-e38e-4fcb-bce2-f77a5c4e9403)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 214.63 54.2858 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Col4" (shape input) (at 148.59 111.76 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid dea986b0-dade-4d21-9dba-d1a112c16a69)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 141.3111 111.76 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Row0" (shape input) (at 182.88 62.23 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid dfe6d9ab-10b8-4227-aef1-5a3244b86537)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 182.88 54.2858 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Col1" (shape input) (at 149.86 85.09 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid e7e9e398-e5c7-408d-9c17-0fccd372ecd6)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 149.86 92.3689 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Row2" (shape input) (at 91.44 85.09 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid e81c7dfa-d07f-4440-b138-029b155e1ae4)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 91.44 77.1458 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Row0" (shape input) (at 91.44 62.23 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid e84bff88-15f7-4e76-a02e-b772d4510195)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 91.44 54.2858 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Col3" (shape input) (at 148.59 114.3 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid f58ab402-ae95-4fe0-a905-4c058a19f7f4)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 141.3111 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Row2" (shape input) (at 152.4 85.09 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid f9ed1fa0-4456-40e3-9e55-bea4861c954e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 152.4 77.1458 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 219.71 73.66 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 0c1b914a-9811-4357-9149-d12996db20a2)
-    (property "Reference" "D14" (at 219.71 67.31 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 219.71 69.85 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 219.71 73.66 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 219.71 73.66 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 219.71 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 219.71 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b183e791-13e0-4953-b00a-f52489d86499))
-    (pin "2" (uuid 3104e564-caa8-4afe-9ea6-9616395f3f7a))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D14") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 127 85.09 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 10f795c8-371e-4372-b362-fddc22e6e830)
-    (property "Reference" "D6" (at 127 78.74 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 127 81.28 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 127 85.09 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 127 85.09 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 127 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 127 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 616df779-f7e5-41bd-bede-8abb99ad819c))
-    (pin "2" (uuid e7ad7dcf-7398-4fe7-a067-d48cb78a4fdd))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 219.71 85.09 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1de2359d-2d6d-4205-a509-0eb5a01e0cb6)
-    (property "Reference" "D15" (at 219.71 78.74 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 219.71 81.28 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 219.71 85.09 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 219.71 85.09 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 219.71 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 219.71 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 366d41d1-e9f5-4197-afc2-47a06a2c7119))
-    (pin "2" (uuid dced5c56-10ac-426c-88c8-7e37873e8e93))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D15") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 242.57 62.23 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 1edb4b18-63a7-48ca-8319-fd2de037fe94)
-    (property "Reference" "S5" (at 232.41 54.61 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 232.41 57.15 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 226.06 157.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 226.06 257.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 226.06 457.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 226.06 557.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 226.06 657.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 226.06 757.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 226.06 857.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid f48f9a52-21db-42d2-b766-9322b1a52bfb))
-    (pin "2" (uuid 0827c845-1aba-49a7-8fa2-908b5a5ebfcf))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 187.96 85.09 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2140f2c6-e9f0-45bc-a662-08f6f4b2ac61)
-    (property "Reference" "D12" (at 187.96 78.74 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 187.96 81.28 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 187.96 85.09 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 187.96 85.09 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 187.96 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 187.96 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a6134837-f649-4a75-a943-f140ccdbeda2))
-    (pin "2" (uuid 866ad52b-a50d-47d9-87e9-2d31873ea20b))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D12") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 210.82 85.09 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 2960103e-c959-4d52-9193-4a149af0817a)
-    (property "Reference" "S14" (at 200.66 77.47 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 200.66 80.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 194.31 180.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 194.31 280.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 194.31 480.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 194.31 580.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 194.31 680.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 194.31 780.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 194.31 880.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid fa6246d9-2aba-402b-aa27-cfb7626ae065))
-    (pin "2" (uuid bc615bf6-faf6-4ae2-b469-253511b20a62))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S14") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 157.48 85.09 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2e47dc31-685c-4924-ac77-d526a23009e4)
-    (property "Reference" "D9" (at 157.48 78.74 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 157.48 81.28 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 157.48 85.09 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 157.48 85.09 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 157.48 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 157.48 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 526503a3-144c-432e-86da-14cb1044d611))
-    (pin "2" (uuid 1b5676e1-5519-4901-b0c3-d2f691391807))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 180.34 85.09 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 344aaf33-c099-43b8-ae04-54be1dc699f0)
-    (property "Reference" "S13" (at 170.18 77.47 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 170.18 80.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 163.83 180.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 163.83 280.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 163.83 480.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 163.83 580.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 163.83 680.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 163.83 780.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 163.83 880.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 8ab89c0b-67f0-41a2-8269-7a914d02fb65))
-    (pin "2" (uuid f7f5d31b-399e-4dee-8f05-a6bf5962b4dd))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S13") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:RotaryEncoder_Switch") (at 199.39 120.65 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 34f0000d-1183-476d-8c49-02d37d3cf374)
-    (property "Reference" "SW1" (at 199.39 110.49 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "RotaryEncoder_Switch" (at 199.39 113.03 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Rotary_Encoder:RotaryEncoder_Bourns_Vertical_PEC12R-3xxxF-Sxxxx" (at 195.58 116.586 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 199.39 114.046 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "A" (uuid c78ab2d5-7128-4317-9416-c209730d4b10))
-    (pin "B" (uuid 66215e92-59ca-4c84-823d-5a6b0587cfa5))
-    (pin "C" (uuid 48f94160-6254-41c5-b109-ea8e79abcb6a))
-    (pin "S1" (uuid 5cc8ee31-7fe0-4996-86d8-21bfc0386196))
-    (pin "S2" (uuid b095ded7-ec65-4d8d-ba05-610aac7a791f))
-    (pin "SH" (uuid 94c03f87-11c5-45fc-a6a7-f631fcc24116))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "SW1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 207.01 123.19 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 39fed2e4-ad56-4516-812d-da1e18bc92df)
-    (property "Reference" "#PWR05" (at 207.01 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 207.01 128.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 207.01 123.19 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 207.01 123.19 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a3e0e4d6-13ec-40d3-9c93-5507693c2c83))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "#PWR05") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 96.52 73.66 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3b3deb7a-7638-497c-9edf-e602811d47d2)
-    (property "Reference" "D2" (at 96.52 67.31 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 96.52 69.85 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 96.52 73.66 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 96.52 73.66 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 96.52 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 96.52 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7ea9138e-5200-4d51-9f99-4b5481a9ffbe))
-    (pin "2" (uuid d6a63d37-6c04-4e96-b290-95815035bd4e))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 191.77 120.65 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3fa48912-4e0d-4b0c-9897-38ec7f740365)
-    (property "Reference" "#PWR04" (at 185.42 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 187.96 120.65 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 191.77 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 191.77 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7b5e16bb-cbae-497f-b3e5-14159aea828f))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "#PWR04") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 242.57 73.66 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 47919d9a-fddc-4b7c-baaa-7906b006e033)
-    (property "Reference" "S10" (at 232.41 66.04 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 232.41 68.58 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 226.06 168.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 226.06 268.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 226.06 468.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 226.06 568.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 226.06 668.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 226.06 768.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 226.06 868.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 1c7a280e-1de8-4073-851d-287a2c21737d))
-    (pin "2" (uuid 92c3eba9-93bf-4a96-bffc-e4cbf5d49da9))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 119.38 62.23 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 489eaaf3-f854-46be-8e3a-81f4d308e3fa)
-    (property "Reference" "S1" (at 109.22 54.61 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 109.22 57.15 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 102.87 157.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 102.87 257.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 102.87 457.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 102.87 557.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 102.87 657.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 102.87 757.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 102.87 857.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid edeaf50e-9bf5-4ab7-a260-7395de417caf))
-    (pin "2" (uuid 301952b2-10db-4bc2-a034-1b0a08909554))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 119.38 85.09 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5f45e130-7e73-4b95-859e-9ed7cdfef56d)
-    (property "Reference" "S11" (at 109.22 77.47 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 109.22 80.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 102.87 180.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 102.87 280.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 102.87 480.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 102.87 580.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 102.87 680.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 102.87 780.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 102.87 880.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 571be8b3-ed8f-45f0-ab60-79dda08afe07))
-    (pin "2" (uuid 4428d720-dce8-4574-9072-45b082aaabd6))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S11") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 210.82 73.66 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5fd640ea-31db-4cd3-a0ed-4aacaf646a39)
-    (property "Reference" "S9" (at 200.66 66.04 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 200.66 68.58 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 194.31 168.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 194.31 268.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 194.31 468.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 194.31 568.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 194.31 668.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 194.31 768.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 194.31 868.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 11806cd0-fd6b-458a-9fd9-8d761b2a3f0d))
-    (pin "2" (uuid 052c5198-5260-4abb-980b-1aa75c88e1b2))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 96.52 62.23 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 68ae716e-6cb0-42b7-8879-8651b7246b87)
-    (property "Reference" "D1" (at 96.52 55.88 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 96.52 58.42 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 96.52 62.23 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 96.52 62.23 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 96.52 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 96.52 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c579253b-3270-4570-83ca-fe3df2681458))
-    (pin "2" (uuid be1e0a31-1cf5-4808-adc7-4ac23ae433f6))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 149.86 62.23 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 7c52e088-5f7c-4cd8-b03d-8468989c2813)
-    (property "Reference" "S2" (at 139.7 54.61 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 139.7 57.15 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 133.35 157.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 133.35 257.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 133.35 457.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 133.35 557.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 133.35 657.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 133.35 757.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 133.35 857.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 1ae7d768-bbdb-44fa-9736-00058a6a1fbc))
-    (pin "2" (uuid e4ce8bfa-cb07-43f4-9697-4ff521e65608))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 157.48 73.66 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 80ab62d0-835c-4265-bb85-d59657f5c149)
-    (property "Reference" "D8" (at 157.48 67.31 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 157.48 69.85 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 157.48 73.66 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 157.48 73.66 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 157.48 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 157.48 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0965580e-fa0b-4b67-a4ed-347ba1f0a4f9))
-    (pin "2" (uuid d66a056e-6109-434b-beb4-01e7fb16c756))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 242.57 85.09 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 823579cb-b447-4432-abe3-b48fadcec396)
-    (property "Reference" "S15" (at 232.41 77.47 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 232.41 80.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 226.06 180.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 226.06 280.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 226.06 480.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 226.06 580.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 226.06 680.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 226.06 780.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 226.06 880.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 3d6f5ce8-0610-456c-a141-afc468e483bb))
-    (pin "2" (uuid de3be552-b153-4d8e-b536-ad484170abc3))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S15") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 210.82 62.23 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 827e2a3a-fa1d-4622-9d99-00e1f1746021)
-    (property "Reference" "S4" (at 200.66 54.61 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 200.66 57.15 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 194.31 157.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 194.31 257.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 194.31 457.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 194.31 557.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 194.31 657.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 194.31 757.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 194.31 857.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid e974291d-4714-4308-a1c8-1c8e67ac5bb6))
-    (pin "2" (uuid 5cfbcc1e-5a55-4e46-9bdf-8d3903512d12))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 187.96 73.66 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8cc6df7b-cb9f-4129-b8c4-369c341d58e6)
-    (property "Reference" "D11" (at 187.96 67.31 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 187.96 69.85 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 187.96 73.66 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 187.96 73.66 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 187.96 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 187.96 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 515f8943-a518-4f46-b32c-f1f38497e1aa))
-    (pin "2" (uuid 989e4c40-5117-4347-859b-91870df7a961))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D11") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "rp2040-zero:RP2040-Zero") (at 162.56 116.84 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 9a9af878-54c3-4b1f-b717-57f847e61c3c)
-    (property "Reference" "RZ1" (at 164.7541 134.62 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "RP2040-Zero" (at 164.7541 137.16 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "RP2040-Zero:RP2040-Zero" (at 164.7541 139.7 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Datasheet" "" (at 162.56 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "0" (uuid c23e53a0-986e-4167-be51-ce0d8960bb70))
-    (pin "1" (uuid c271ed8b-9bec-4e88-bc7e-474814800f70))
-    (pin "10" (uuid 11de150c-bd1c-4ba1-ae30-d106707e453c))
-    (pin "11" (uuid 77e38ca5-f8eb-492a-b4f9-14735938a45e))
-    (pin "12" (uuid 12729621-1230-4292-a542-cddd29ad4b9d))
-    (pin "13" (uuid 0771a232-8073-4f19-a86c-4e1118315796))
-    (pin "14" (uuid f6862a3a-7a9b-4d19-8fd1-3f64c263fa20))
-    (pin "15" (uuid 4d6053c9-0ace-4639-93a4-1f2cef0f9757))
-    (pin "2" (uuid 9127d47e-0ac4-49e9-babe-7d6c6c73eb28))
-    (pin "26" (uuid 1277ce72-e6b2-4d1c-b192-7623944fb2d8))
-    (pin "27" (uuid 7d8e73f6-8b92-4267-8442-ec2ef4411d65))
-    (pin "28" (uuid a8c65ce0-dff7-4d6d-87c2-1370369244e9))
-    (pin "29" (uuid 3f6a5b3d-0e53-4ef7-a9f1-faae4473f519))
-    (pin "3" (uuid ca1141c2-8e72-40f6-b46c-0f22521c1ae7))
-    (pin "30" (uuid a5bf30d3-9fad-4b18-b694-394676266859))
-    (pin "31" (uuid e68403f4-a178-4e8a-9e1f-b58e71e30491))
-    (pin "32" (uuid 70c1686a-d859-4724-9691-5c1dceddddcf))
-    (pin "4" (uuid 25bbbf37-d506-401c-9a70-702c799a4c90))
-    (pin "5" (uuid 3a2599bf-5999-4ff0-b424-bfa4c0453c47))
-    (pin "6" (uuid 17b21dc9-0734-4ca4-a6cd-1d3296ad8902))
-    (pin "7" (uuid 8b07e95e-a44b-4c22-873f-47a25d30f7d1))
-    (pin "8" (uuid f636e34d-5f34-40c7-ba9d-e877c27d2b57))
-    (pin "9" (uuid 08b150cd-3778-404f-abd0-cb6eda6b774b))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "RZ1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 163.83 100.33 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 9cf01c43-421a-4289-a5cb-0460d67581fe)
-    (property "Reference" "#PWR03" (at 160.02 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 167.64 100.33 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 163.83 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 163.83 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b68f78e3-ee86-4d52-ae37-1a190e15b25d))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 180.34 73.66 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 9f793ee2-5633-4ffe-87b1-9cbac3a4418e)
-    (property "Reference" "S8" (at 170.18 66.04 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 170.18 68.58 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 163.83 168.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 163.83 268.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 163.83 468.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 163.83 568.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 163.83 668.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 163.83 768.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 163.83 868.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 6d00ed5c-fd5e-420d-a125-9368de957867))
-    (pin "2" (uuid c2b3bdad-bad8-4f9d-8459-017dc916eaec))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 119.38 73.66 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a28dfbe8-efe4-4473-aeea-82f05f3191e3)
-    (property "Reference" "S6" (at 109.22 66.04 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 109.22 68.58 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 102.87 168.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 102.87 268.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 102.87 468.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 102.87 568.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 102.87 668.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 102.87 768.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 102.87 868.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid e81c6dd9-309f-410d-912f-c77b5cc99f6b))
-    (pin "2" (uuid ade25f13-6fef-425f-830e-11d016e791f9))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 127 62.23 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid a806c2d2-e36e-4f47-b6b8-8ff49df274a9)
-    (property "Reference" "D4" (at 127 55.88 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 127 58.42 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 127 62.23 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 127 62.23 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 127 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 127 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5b566a45-f5d6-4c80-ab02-79d1d1ce8d22))
-    (pin "2" (uuid bd84bb10-1bed-44fe-ae6a-37e9f262d170))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 157.48 62.23 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid b832e5dc-f8cc-4305-9334-2f957882745b)
-    (property "Reference" "D7" (at 157.48 55.88 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 157.48 58.42 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 157.48 62.23 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 157.48 62.23 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 157.48 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 157.48 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5e29f9c0-7c85-4149-98dd-221c46935723))
-    (pin "2" (uuid 6a62cf21-0a97-45d4-8e73-5f2a4f6066ac))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 127 73.66 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid cf69426a-f8c2-4f27-b895-766f7c8f1793)
-    (property "Reference" "D5" (at 127 67.31 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 127 69.85 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 127 73.66 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 127 73.66 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 127 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 127 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 861fcd5b-dafa-4b34-acec-6014a0457983))
-    (pin "2" (uuid bff54c30-62c4-4cd4-858a-a314a71cd133))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 162.56 134.62 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid cf7c53a0-c9f5-42d6-8e44-2a12b0aaa216)
-    (property "Reference" "#PWR01" (at 162.56 140.97 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 162.56 139.7 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 162.56 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 162.56 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8c9f217e-f842-4ed1-a209-beab6ed26e07))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "#PWR01") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 219.71 62.23 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d1b9e33b-4bfd-4600-9e3b-d4369ff141eb)
-    (property "Reference" "D13" (at 219.71 55.88 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 219.71 58.42 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 219.71 62.23 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 219.71 62.23 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 219.71 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 219.71 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5200932d-b98d-4897-b9e5-9641142b56be))
-    (pin "2" (uuid a1881ddf-40b8-45e6-a751-2a57e111710f))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D13") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 96.52 85.09 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d3987b6f-a4b9-42c3-8c8e-edc49a4907f2)
-    (property "Reference" "D3" (at 96.52 78.74 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 96.52 81.28 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 96.52 85.09 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 96.52 85.09 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 96.52 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 96.52 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fa1d130e-2155-40fe-b335-f8ad5af956f2))
-    (pin "2" (uuid d3bd2b00-d62a-4f8d-8f49-3e9e8fcd2493))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Small") (at 187.96 62.23 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d473bd03-7466-4248-beca-48f9e707d85d)
-    (property "Reference" "D10" (at 187.96 55.88 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D_Small" (at 187.96 58.42 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 187.96 62.23 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 187.96 62.23 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 187.96 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 187.96 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2e5cd338-fc29-4037-a754-318992765f09))
-    (pin "2" (uuid ad22f41a-6297-4c49-b862-a5f0c5ca546e))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "D10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 199.39 128.27 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d7eb16fc-b46b-43e2-a01a-9d57c3eab2fd)
-    (property "Reference" "#PWR06" (at 199.39 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 199.39 133.35 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 199.39 128.27 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 199.39 128.27 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4b0d4cd2-f250-4a0e-b6af-a337d068196c))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "#PWR06") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 161.29 100.33 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d98ad11b-1e14-4c78-8e70-075c9c275585)
-    (property "Reference" "#PWR02" (at 161.29 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 161.29 95.25 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 161.29 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 161.29 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 81a6b8c3-5fd3-40b6-9ad2-80cd19383c51))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "#PWR02") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 149.86 85.09 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid dac08d63-5190-4ae9-82ca-9125a18ac491)
-    (property "Reference" "S12" (at 139.7 77.47 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 139.7 80.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 133.35 180.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 133.35 280.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 133.35 480.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 133.35 580.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 133.35 680.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 133.35 780.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 133.35 880.01 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 2e1a54c6-6f2d-4708-a2e0-ca9c48f67dc9))
-    (pin "2" (uuid 5e773c20-df5f-4922-8c5c-a7086c51a9ff))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S12") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 149.86 73.66 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid f679af54-4cba-4486-9be8-12b456d071bf)
-    (property "Reference" "S7" (at 139.7 66.04 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 139.7 68.58 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 133.35 168.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 133.35 268.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 133.35 468.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 133.35 568.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 133.35 668.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 133.35 768.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 133.35 868.58 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 57571e18-2fd1-44f6-bf60-45767a78cf74))
-    (pin "2" (uuid f186712b-c0e6-4724-b647-70c25bbe83d9))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MX1A-C1NN:MX1A-C1NN") (at 180.34 62.23 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid f6c65acd-5af4-490a-aa0d-37a886e1fc52)
-    (property "Reference" "S3" (at 170.18 54.61 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MX1A-C1NN" (at 170.18 57.15 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 163.83 157.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf" (at 163.83 257.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "15.2" (at 163.83 457.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "540-MX1A-C1NN" (at 163.83 557.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-C1NN?qs=Z9t1pRjfOcwvorA009Lo0w%3D%3D" (at 163.83 657.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Cherry" (at 163.83 757.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MX1A-C1NN" (at 163.83 857.15 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 9def9112-46e2-4673-ae89-2efbaa58cf7b))
-    (pin "2" (uuid 58b5f223-f642-4ffc-97b7-233243ac0114))
-    (instances
-      (project "SkyMusicPad"
-        (path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
-          (reference "S3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20240101)
+	(generator "eeschema")
+	(generator_version "8.99")
+	(uuid "892c3dfc-ea33-45ad-8367-abbb3e31e120")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:D_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "D_Small"
+				(at -3.81 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Small_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:RotaryEncoder_Switch"
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW1"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RotaryEncoder_Switch"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Rotary_Encoder:RotaryEncoder_Bourns_Vertical_PEC12R-3xxxF-Sxxxx"
+				(at -3.81 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "rotary switch encoder switch push button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "RotaryEncoder*Switch*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RotaryEncoder_Switch_0_1"
+				(circle
+					(center -3.81 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 4.318 -2.54) (xy 4.318 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 4.318 2.54) (xy 4.318 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 -1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 3.429 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.016) (xy 3.81 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.921) (xy -0.508 2.667) (xy 0.127 2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 -3.048) (xy -0.508 -2.794) (xy 0.127 -2.413)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.381 0)
+					(radius 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.381 2.667)
+					(mid -3.0988 -0.0635)
+					(end -0.381 -2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.778) (xy -0.635 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 -1.778) (xy -0.381 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 1.778) (xy -0.127 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -3.81 -2.54) (xy -3.81 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.81 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.318 0) (xy -3.81 0) (xy -3.81 1.016) (xy -3.302 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -3.81 0) (xy -3.81 -1.016) (xy -3.302 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RotaryEncoder_Switch_1_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "Shell_Ground"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "GND_1"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "GND_2"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_2_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_2_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rp2040-zero:RP2040-Zero"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RZ"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RP2040-Zero"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "RP2040-Zero:RP2040-Zero"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RP2040-Zero_0_1"
+				(rectangle
+					(start -11.43 -15.24)
+					(end 12.7 13.97)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "RP2040-Zero_1_1"
+				(pin bidirectional line
+					(at -13.97 10.16 0)
+					(length 2.54)
+					(name "GP0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -13.97 7.62 0)
+					(length 2.54)
+					(name "GP1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 10.16 180)
+					(length 2.54)
+					(name "GP29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 7.62 180)
+					(length 2.54)
+					(name "GP28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 5.08 180)
+					(length 2.54)
+					(name "GP27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "GP26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "GP15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -2.54 180)
+					(length 2.54)
+					(name "GP14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "GP13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -7.62 180)
+					(length 2.54)
+					(name "GP12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -10.16 180)
+					(length 2.54)
+					(name "GP11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 2.54)
+					(name "GP10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 1.27 16.51 270)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -1.27 16.51 270)
+					(length 2.54)
+					(name "5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -13.97 5.08 0)
+					(length 2.54)
+					(name "GP2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -13.97 2.54 0)
+					(length 2.54)
+					(name "GP3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -13.97 0 0)
+					(length 2.54)
+					(name "GP4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -13.97 -2.54 0)
+					(length 2.54)
+					(name "GP5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -13.97 -5.08 0)
+					(length 2.54)
+					(name "GP6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -13.97 -7.62 0)
+					(length 2.54)
+					(name "GP7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -13.97 -10.16 0)
+					(length 2.54)
+					(name "GP8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -13.97 -12.7 0)
+					(length 2.54)
+					(name "GP9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 149.86 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a5a5e3a-2379-4a0a-8904-d4f8c6664733")
+	)
+	(junction
+		(at 109.22 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ee67a7e-8678-4c08-872f-1755757fd1c3")
+	)
+	(junction
+		(at 191.77 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32b57eea-b3b6-4582-bf58-f981afedc9be")
+	)
+	(junction
+		(at 129.54 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cfad5cb6-82e4-47a0-b60b-bbb366cbc28c")
+	)
+	(junction
+		(at 170.18 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f09980c5-a7f3-487f-b708-95988c9ccf87")
+	)
+	(wire
+		(pts
+			(xy 111.76 62.23) (xy 114.3 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a788290-1068-4793-8794-67a75f9fe020")
+	)
+	(wire
+		(pts
+			(xy 173.99 85.09) (xy 176.53 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47a0d3e2-b672-4ad5-a8d1-10c9a0081ab7")
+	)
+	(wire
+		(pts
+			(xy 132.08 62.23) (xy 134.62 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48ae5483-5d22-4da9-8c5e-4ade2ed1723a")
+	)
+	(wire
+		(pts
+			(xy 59.69 124.46) (xy 64.77 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a593b39-88a4-4684-b9cf-52548248a667")
+	)
+	(wire
+		(pts
+			(xy 109.22 62.23) (xy 109.22 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5061c00f-c229-40ae-942c-68f84a3c17d6")
+	)
+	(wire
+		(pts
+			(xy 129.54 73.66) (xy 129.54 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "565d6677-8bc9-4921-886e-ee312f3b0d03")
+	)
+	(wire
+		(pts
+			(xy 149.86 73.66) (xy 149.86 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "734ce511-a363-4ced-93e0-9ecc275e9128")
+	)
+	(wire
+		(pts
+			(xy 191.77 73.66) (xy 191.77 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73c2d2ce-604b-4b47-9bd3-5b8ddd06f953")
+	)
+	(wire
+		(pts
+			(xy 132.08 73.66) (xy 134.62 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "787a812d-68b7-47ca-9fdc-4a8f3d0eb9d5")
+	)
+	(wire
+		(pts
+			(xy 149.86 62.23) (xy 149.86 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8adf4741-6f06-41a7-99e6-37332f896bc9")
+	)
+	(wire
+		(pts
+			(xy 170.18 62.23) (xy 170.18 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8be76573-3f74-4928-8c26-83bc258eaf3b")
+	)
+	(wire
+		(pts
+			(xy 173.99 62.23) (xy 176.53 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bf0c6cb-30d9-47aa-8246-45c8171e4f81")
+	)
+	(wire
+		(pts
+			(xy 132.08 85.09) (xy 134.62 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96ea244e-bdf1-493b-b2e3-80d7ae9ecff1")
+	)
+	(wire
+		(pts
+			(xy 130.81 121.92) (xy 134.62 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97a181a6-c5c1-40e2-901d-875cb8a643c3")
+	)
+	(wire
+		(pts
+			(xy 67.31 124.46) (xy 72.39 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97f0642b-5676-440a-91a8-0b062c96e5a0")
+	)
+	(wire
+		(pts
+			(xy 191.77 62.23) (xy 191.77 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99e2dd02-46ac-4f3c-951c-e8320e96db29")
+	)
+	(wire
+		(pts
+			(xy 91.44 62.23) (xy 93.98 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a490eeaf-14a1-4159-9324-aecce161361e")
+	)
+	(wire
+		(pts
+			(xy 129.54 62.23) (xy 129.54 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd97e300-99b2-4b0c-b8d0-e5bc58a6be8a")
+	)
+	(wire
+		(pts
+			(xy 152.4 73.66) (xy 154.94 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c08edbcd-8dfb-4a12-9005-e149d92e4338")
+	)
+	(wire
+		(pts
+			(xy 91.44 73.66) (xy 93.98 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5df52d8-77bc-4183-9a29-d60780b3a3a0")
+	)
+	(wire
+		(pts
+			(xy 152.4 85.09) (xy 154.94 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1a8e0cf-256c-4c5c-b113-059ac481ebb9")
+	)
+	(wire
+		(pts
+			(xy 111.76 85.09) (xy 114.3 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3d39b80-d8a4-4723-9ce4-307d0d4321fd")
+	)
+	(wire
+		(pts
+			(xy 152.4 62.23) (xy 154.94 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db251c33-1c0e-4a2f-997f-9f4b8c15a097")
+	)
+	(wire
+		(pts
+			(xy 170.18 73.66) (xy 170.18 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dec327d0-bf23-4c87-8634-4e399bb7d837")
+	)
+	(wire
+		(pts
+			(xy 109.22 73.66) (xy 109.22 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2823b84-f602-425c-b315-b55250f10cc2")
+	)
+	(wire
+		(pts
+			(xy 111.76 73.66) (xy 114.3 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2a55137-b130-4358-a166-06fc849fbc56")
+	)
+	(wire
+		(pts
+			(xy 173.99 73.66) (xy 176.53 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7d5db72-4329-4d6e-8156-e92cb7c8642e")
+	)
+	(wire
+		(pts
+			(xy 130.81 116.84) (xy 134.62 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc2ba2bd-f4f3-45c2-b453-2a9a27fdc421")
+	)
+	(wire
+		(pts
+			(xy 91.44 85.09) (xy 93.98 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffa44855-5a05-4edd-bb81-205b4d63c6af")
+	)
+	(global_label "Row2"
+		(shape input)
+		(at 152.4 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "07a69d34-fb37-42b4-a895-025d4c1590d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.4 77.1458 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row2"
+		(shape input)
+		(at 111.76 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1db9ffcd-dffe-4d5d-9119-0a5060459e90")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 111.76 77.1458 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col1"
+		(shape input)
+		(at 81.28 140.97 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "29cbe11c-f43d-4a47-952e-d33496ae58a5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.5589 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row1"
+		(shape input)
+		(at 173.99 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "37e44985-3bdb-48a6-80c6-fec3528759e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.99 65.7158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row1"
+		(shape input)
+		(at 52.07 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "39821f8f-5e31-44ec-8433-27978c0829cd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 44.1258 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row1"
+		(shape input)
+		(at 132.08 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3a229c54-5992-430e-952b-47af8b01274d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 132.08 65.7158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row2"
+		(shape input)
+		(at 173.99 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3a7b828f-3ab4-489b-9cb5-71f806e2202f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.99 77.1458 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col3"
+		(shape input)
+		(at 170.18 85.09 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3d7bdfc9-f98b-40ca-970f-6a73f08e1875")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.18 92.3689 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Rot_A"
+		(shape bidirectional)
+		(at 130.81 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "52a9b7ef-3134-4a34-b518-77a159519d69")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.5126 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Rot_B"
+		(shape bidirectional)
+		(at 52.07 146.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5482519d-365c-483a-9534-8ead64778823")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 42.5912 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row0"
+		(shape input)
+		(at 111.76 62.23 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "650d0479-8bcb-4e01-8db9-d5a1fad283af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 111.76 54.2858 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row1"
+		(shape input)
+		(at 152.4 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "678bdda2-6bcc-4d11-b0c8-77e7c74bdba8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.4 65.7158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row1"
+		(shape input)
+		(at 111.76 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "71563c98-461b-4504-a934-86307cfe2c1b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 111.76 65.7158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row2"
+		(shape input)
+		(at 52.07 153.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7223003e-70d6-49db-b4f7-7825851d4f71")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 44.1258 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row1"
+		(shape input)
+		(at 91.44 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "74291296-f5d9-4f53-bcd3-3ccbfda5dfc6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.44 65.7158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row0"
+		(shape input)
+		(at 52.07 148.59 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8fb29e2f-a9f9-4daf-9c90-c41f1a069346")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 44.1258 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col2"
+		(shape input)
+		(at 81.28 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "92425a69-46db-4b6c-a4bc-7ea2d561fd1b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.5589 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col2"
+		(shape input)
+		(at 149.86 85.09 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a714b116-8e1e-4d41-aa01-1ff01ace71aa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.86 92.3689 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Rot_SW"
+		(shape bidirectional)
+		(at 52.07 140.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a8608034-c590-4df4-ae74-dd2d34633dad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.2003 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col0"
+		(shape input)
+		(at 109.22 85.09 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bf81e092-8f31-4b7c-8874-4e3721401f1c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 109.22 92.3689 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row0"
+		(shape input)
+		(at 132.08 62.23 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c6701fc1-6818-4479-9561-3f3f897001ee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 132.08 54.2858 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col4"
+		(shape input)
+		(at 191.77 85.09 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cd32e97e-fe6f-4b32-8726-a417c69f9aa1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.77 92.3689 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col0"
+		(shape input)
+		(at 81.28 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d092d206-c6aa-43ac-abdd-81e8a746b19f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.5589 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row0"
+		(shape input)
+		(at 173.99 62.23 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d2bb744b-e38e-4fcb-bce2-f77a5c4e9403")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.99 54.2858 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Rot_A"
+		(shape bidirectional)
+		(at 52.07 143.51 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dac6b3ba-a247-49df-bf42-0962d5363d3e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 42.7726 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col4"
+		(shape input)
+		(at 81.28 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dea986b0-dade-4d21-9dba-d1a112c16a69")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.5589 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row0"
+		(shape input)
+		(at 152.4 62.23 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dfe6d9ab-10b8-4227-aef1-5a3244b86537")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.4 54.2858 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col1"
+		(shape input)
+		(at 129.54 85.09 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e7e9e398-e5c7-408d-9c17-0fccd372ecd6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.54 92.3689 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row2"
+		(shape input)
+		(at 91.44 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e81c7dfa-d07f-4440-b138-029b155e1ae4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.44 77.1458 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row0"
+		(shape input)
+		(at 91.44 62.23 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e84bff88-15f7-4e76-a02e-b772d4510195")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.44 54.2858 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col3"
+		(shape input)
+		(at 81.28 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f58ab402-ae95-4fe0-a905-4c058a19f7f4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.5589 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row2"
+		(shape input)
+		(at 132.08 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f9ed1fa0-4456-40e3-9e55-bea4861c954e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 132.08 77.1458 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Rot_SW"
+		(shape bidirectional)
+		(at 149.86 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fcec3572-03e9-42f6-b290-3a6f88db6d81")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.7297 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Rot_B"
+		(shape bidirectional)
+		(at 130.81 121.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ff8969dd-3db3-405a-8e10-d45ee3733cf0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.3312 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 245.11 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c0af7cb-6b64-4cc7-932c-28691a0e1567")
+		(property "Reference" "H3"
+			(at 245.11 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 245.11 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+			(at 245.11 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 245.11 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 245.11 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ada188d-4b48-49dc-a9e7-424a6fe26a70")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 179.07 73.66 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c1b914a-9811-4357-9149-d12996db20a2")
+		(property "Reference" "D14"
+			(at 179.07 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 179.07 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 179.07 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 179.07 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 179.07 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b183e791-13e0-4953-b00a-f52489d86499")
+		)
+		(pin "2"
+			(uuid "3104e564-caa8-4afe-9ea6-9616395f3f7a")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 234.95 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0cd7d18d-8849-4a1d-8ad4-3213ee2254ab")
+		(property "Reference" "H1"
+			(at 234.95 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+			(at 234.95 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 234.95 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e251200-db81-4b59-9300-e7bfa1bc11c3")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 72.39 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f27261f-a76d-4626-8e2c-38ead0c8ce8c")
+		(property "Reference" "#PWR03"
+			(at 72.39 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 72.39 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 72.39 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a4b917c3-d2c9-4f24-8598-199a215b78dd")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 116.84 85.09 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10f795c8-371e-4372-b362-fddc22e6e830")
+		(property "Reference" "D6"
+			(at 116.84 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 116.84 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 116.84 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 116.84 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 116.84 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "616df779-f7e5-41bd-bede-8abb99ad819c")
+		)
+		(pin "2"
+			(uuid "e7ad7dcf-7398-4fe7-a067-d48cb78a4fdd")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 104.14 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c234bab-8389-4cc5-99c9-d46015256865")
+		(property "Reference" "SW2"
+			(at 104.14 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 104.14 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 104.14 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 104.14 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a34a3f6-fac6-453c-abda-8dab811373de")
+		)
+		(pin "2"
+			(uuid "36d4c098-b86c-4756-aa5c-0b92d3ada3d9")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 179.07 85.09 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1de2359d-2d6d-4205-a509-0eb5a01e0cb6")
+		(property "Reference" "D15"
+			(at 179.07 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 179.07 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 179.07 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 179.07 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 179.07 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "366d41d1-e9f5-4197-afc2-47a06a2c7119")
+		)
+		(pin "2"
+			(uuid "dced5c56-10ac-426c-88c8-7e37873e8e93")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 157.48 85.09 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2140f2c6-e9f0-45bc-a662-08f6f4b2ac61")
+		(property "Reference" "D12"
+			(at 157.48 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 157.48 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 157.48 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 157.48 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 157.48 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6134837-f649-4a75-a943-f140ccdbeda2")
+		)
+		(pin "2"
+			(uuid "866ad52b-a50d-47d9-87e9-2d31873ea20b")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 104.14 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2a6b704b-915a-4589-8a38-bdb536721d73")
+		(property "Reference" "SW1"
+			(at 104.14 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 104.14 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 104.14 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 104.14 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a65a1142-802b-4f84-82ad-6fce99f30e29")
+		)
+		(pin "2"
+			(uuid "f065eb43-8e5b-4585-8b06-b0bf8b75ac5b")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 137.16 85.09 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e47dc31-685c-4924-ac77-d526a23009e4")
+		(property "Reference" "D9"
+			(at 137.16 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 137.16 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 137.16 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 137.16 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 137.16 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "526503a3-144c-432e-86da-14cb1044d611")
+		)
+		(pin "2"
+			(uuid "1b5676e1-5519-4901-b0c3-d2f691391807")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 245.11 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30645d80-d79f-4c67-9caa-d51e55eee70b")
+		(property "Reference" "#PWR09"
+			(at 245.11 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 245.11 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 245.11 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1df13326-b5b9-4cbf-b3e0-199df43fe301")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:RotaryEncoder_Switch")
+		(at 142.24 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "34f0000d-1183-476d-8c49-02d37d3cf374")
+		(property "Reference" "SW16"
+			(at 142.24 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch"
+			(at 142.24 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Bourns_Vertical_PEC12R-3x17F-Sxxxx"
+			(at 138.43 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 112.776 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A"
+			(uuid "c78ab2d5-7128-4317-9416-c209730d4b10")
+		)
+		(pin "B"
+			(uuid "66215e92-59ca-4c84-823d-5a6b0587cfa5")
+		)
+		(pin "C"
+			(uuid "48f94160-6254-41c5-b109-ea8e79abcb6a")
+		)
+		(pin "S1"
+			(uuid "5cc8ee31-7fe0-4996-86d8-21bfc0386196")
+		)
+		(pin "S2"
+			(uuid "b095ded7-ec65-4d8d-ba05-610aac7a791f")
+		)
+		(pin "SH"
+			(uuid "94c03f87-11c5-45fc-a6a7-f631fcc24116")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 240.03 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38eaf83f-1f85-44d2-83c0-1fed181d3f8f")
+		(property "Reference" "H2"
+			(at 240.03 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40fc9e8e-5aee-4886-9751-b8c199759d7f")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 144.78 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "394b7516-9462-495b-be69-40d00cb13bcc")
+		(property "Reference" "SW7"
+			(at 144.78 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 144.78 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 144.78 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 144.78 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22579dca-9043-423e-9731-b4c3ed79fbe8")
+		)
+		(pin "2"
+			(uuid "675baca5-29ed-40d8-8b3d-700cc1647635")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 149.86 121.92 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39fed2e4-ad56-4516-812d-da1e18bc92df")
+		(property "Reference" "#PWR05"
+			(at 149.86 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 149.86 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 149.86 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a3e0e4d6-13ec-40d3-9c93-5507693c2c83")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 165.1 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b203c8b-291b-4d6d-95a6-d43daf903af4")
+		(property "Reference" "SW10"
+			(at 165.1 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 165.1 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 165.1 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 165.1 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf8fdfb8-9191-4ab4-997a-869bc71a4eb7")
+		)
+		(pin "2"
+			(uuid "030e039b-a3d0-4eb9-a854-a33266925553")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 96.52 73.66 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b3deb7a-7638-497c-9edf-e602811d47d2")
+		(property "Reference" "D2"
+			(at 96.52 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 96.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 96.52 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 96.52 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 96.52 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ea9138e-5200-4d51-9f99-4b5481a9ffbe")
+		)
+		(pin "2"
+			(uuid "d6a63d37-6c04-4e96-b290-95815035bd4e")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 165.1 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d32bb2f-3bc1-41e7-a287-d9a294b8cbae")
+		(property "Reference" "SW11"
+			(at 165.1 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 165.1 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 165.1 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 165.1 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba119a43-bf2d-4854-9ab1-df55265867b6")
+		)
+		(pin "2"
+			(uuid "ef4c65f4-54b3-4707-be58-eb714492b0e5")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 134.62 119.38 270)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3fa48912-4e0d-4b0c-9897-38ec7f740365")
+		(property "Reference" "#PWR04"
+			(at 128.27 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 130.81 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7b5e16bb-cbae-497f-b3e5-14159aea828f")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 124.46 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47cb4058-05f7-44d7-ad63-fb03e1917273")
+		(property "Reference" "SW6"
+			(at 124.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 124.46 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 124.46 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 124.46 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b59f25a5-e4f8-4b9f-8d2e-f5c7940b65d1")
+		)
+		(pin "2"
+			(uuid "92b274dd-291e-42b8-b571-5413fdcb861f")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 144.78 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ab81ba4-146d-4862-96bf-ea9e1694ee82")
+		(property "Reference" "SW8"
+			(at 144.78 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 144.78 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 144.78 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 144.78 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73bf455e-49ed-4d3f-bb9c-f0ded95d0ee6")
+		)
+		(pin "2"
+			(uuid "516d5ea9-a456-44c3-983c-55b6de9d9baa")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 124.46 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51e4c22f-9cca-43bc-b85e-fd1334ec299d")
+		(property "Reference" "SW5"
+			(at 124.46 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 124.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 124.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 124.46 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "485b59f1-fe7f-4a6c-b481-b203efe5fe01")
+		)
+		(pin "2"
+			(uuid "39c7bb9e-eedb-4254-9779-e852b968488a")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 186.69 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56d404dc-0b82-4389-9296-965e7ce1d621")
+		(property "Reference" "SW15"
+			(at 186.69 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 186.69 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b8740ed-7afa-46ed-8a6c-f08000a13d5e")
+		)
+		(pin "2"
+			(uuid "438009e2-ad92-4d58-9e0f-01d39b7457ff")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 250.19 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66ea781a-0385-4df6-95b6-d73b5bc05423")
+		(property "Reference" "#PWR010"
+			(at 250.19 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 250.19 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48a9f28f-b8d2-4c41-8b04-aacf9ef1f132")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 96.52 62.23 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68ae716e-6cb0-42b7-8879-8651b7246b87")
+		(property "Reference" "D1"
+			(at 96.52 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 96.52 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 96.52 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 96.52 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 96.52 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c579253b-3270-4570-83ca-fe3df2681458")
+		)
+		(pin "2"
+			(uuid "be1e0a31-1cf5-4808-adc7-4ac23ae433f6")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 186.69 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a1fdb36-f64d-4ed5-9fc9-ccf1e23146b3")
+		(property "Reference" "SW14"
+			(at 186.69 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 186.69 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 186.69 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 186.69 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "794176bc-fe5e-4a20-89b6-7958f9023db9")
+		)
+		(pin "2"
+			(uuid "56cfdd47-fe40-4cfc-b547-9bf000ae988e")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 240.03 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6bbe9d7c-6031-4a05-9ee8-5141f573f5b1")
+		(property "Reference" "#PWR08"
+			(at 240.03 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4f2c90e-7a57-4353-9da3-af38da40ef62")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 144.78 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "801d8eb4-aefa-4a37-b78f-1c39404452a3")
+		(property "Reference" "SW9"
+			(at 144.78 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 144.78 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 144.78 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 144.78 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65a7445b-e396-484c-89d2-0539cdacec4b")
+		)
+		(pin "2"
+			(uuid "fb0a3204-14b5-4e3c-894b-13bad05ff774")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 137.16 73.66 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80ab62d0-835c-4265-bb85-d59657f5c149")
+		(property "Reference" "D8"
+			(at 137.16 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 137.16 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 137.16 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 137.16 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 137.16 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0965580e-fa0b-4b67-a4ed-347ba1f0a4f9")
+		)
+		(pin "2"
+			(uuid "d66a056e-6109-434b-beb4-01e7fb16c756")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 165.1 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84a69963-41ff-4160-8f3e-d000fd605def")
+		(property "Reference" "SW12"
+			(at 165.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 165.1 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 165.1 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 165.1 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9afbed8f-b85b-4527-8454-fa3d3badaa73")
+		)
+		(pin "2"
+			(uuid "7257ca2e-e3f1-4781-863a-8fb72bcc8f20")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 157.48 73.66 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8cc6df7b-cb9f-4129-b8c4-369c341d58e6")
+		(property "Reference" "D11"
+			(at 157.48 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 157.48 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 157.48 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 157.48 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 157.48 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "515f8943-a518-4f46-b32c-f1f38497e1aa")
+		)
+		(pin "2"
+			(uuid "989e4c40-5117-4347-859b-91870df7a961")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 59.69 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f430490-e2e2-433a-a72a-8c89f0c0d000")
+		(property "Reference" "#PWR02"
+			(at 59.69 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 59.69 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 59.69 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7061ab3-d832-4cea-9144-d9484ea4177b")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_2")
+		(lib_id "power:GND")
+		(at 66.04 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "988a2755-fc5e-4255-ad59-e967332dfcb0")
+		(property "Reference" "#PWR011"
+			(at 66.04 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.04 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c4bc6b5-b984-4418-b91d-d760be37b469")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 116.84 62.23 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a806c2d2-e36e-4f47-b6b8-8ff49df274a9")
+		(property "Reference" "D4"
+			(at 116.84 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 116.84 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 116.84 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 116.84 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 116.84 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b566a45-f5d6-4c80-ab02-79d1d1ce8d22")
+		)
+		(pin "2"
+			(uuid "bd84bb10-1bed-44fe-ae6a-37e9f262d170")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 250.19 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8b578dd-cee0-4ab0-a430-4650b5a036d8")
+		(property "Reference" "H4"
+			(at 250.19 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+			(at 250.19 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 250.19 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c035bb44-1378-4003-ad46-9bd384347c24")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 137.16 62.23 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b832e5dc-f8cc-4305-9334-2f957882745b")
+		(property "Reference" "D7"
+			(at 137.16 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 137.16 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 137.16 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 137.16 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 137.16 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e29f9c0-7c85-4149-98dd-221c46935723")
+		)
+		(pin "2"
+			(uuid "6a62cf21-0a97-45d4-8e73-5f2a4f6066ac")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 104.14 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7bd454a-ecac-4743-b936-73e4ed81c622")
+		(property "Reference" "SW3"
+			(at 104.14 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 104.14 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 104.14 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 104.14 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef72bd9e-9ab9-45d3-af45-ceb125c82451")
+		)
+		(pin "2"
+			(uuid "78700628-7b02-4c55-b824-27a84db7d685")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 116.84 73.66 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf69426a-f8c2-4f27-b895-766f7c8f1793")
+		(property "Reference" "D5"
+			(at 116.84 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 116.84 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 116.84 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 116.84 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 116.84 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "861fcd5b-dafa-4b34-acec-6014a0457983")
+		)
+		(pin "2"
+			(uuid "bff54c30-62c4-4cd4-858a-a314a71cd133")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 179.07 62.23 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1b9e33b-4bfd-4600-9e3b-d4369ff141eb")
+		(property "Reference" "D13"
+			(at 179.07 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 179.07 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 179.07 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 179.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 179.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5200932d-b98d-4897-b9e5-9641142b56be")
+		)
+		(pin "2"
+			(uuid "a1881ddf-40b8-45e6-a751-2a57e111710f")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 96.52 85.09 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3987b6f-a4b9-42c3-8c8e-edc49a4907f2")
+		(property "Reference" "D3"
+			(at 96.52 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 96.52 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 96.52 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 96.52 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 96.52 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa1d130e-2155-40fe-b335-f8ad5af956f2")
+		)
+		(pin "2"
+			(uuid "d3bd2b00-d62a-4f8d-8f49-3e9e8fcd2493")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 157.48 62.23 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d473bd03-7466-4248-beca-48f9e707d85d")
+		(property "Reference" "D10"
+			(at 157.48 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 157.48 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 157.48 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 157.48 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 157.48 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e5cd338-fc29-4037-a754-318992765f09")
+		)
+		(pin "2"
+			(uuid "ad22f41a-6297-4c49-b862-a5f0c5ca546e")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 124.46 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d481f344-1cc2-4792-b0be-1fa037f8b3c7")
+		(property "Reference" "SW4"
+			(at 124.46 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 124.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 124.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 124.46 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1191ad62-9e9c-4a2a-9d1b-a788d8dfead7")
+		)
+		(pin "2"
+			(uuid "2c12ba99-48e5-4c06-b094-1ae386869f8d")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 234.95 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d55f3cf3-636c-4622-9953-3bd32821cc15")
+		(property "Reference" "#PWR07"
+			(at 234.95 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 234.95 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e10873f-a248-432e-b51b-63fd8e8c51e6")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 142.24 127 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d7eb16fc-b46b-43e2-a01a-9d57c3eab2fd")
+		(property "Reference" "#PWR06"
+			(at 142.24 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4b0d4cd2-f250-4a0e-b6af-a337d068196c")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 186.69 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee667f08-4395-47b4-8bd5-88572b093574")
+		(property "Reference" "SW13"
+			(at 186.69 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cherry"
+			(at 186.69 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB"
+			(at 186.69 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 186.69 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e4f09db-2000-47e8-9065-25a528bfa068")
+		)
+		(pin "2"
+			(uuid "a68a0398-dec3-4f78-aa23-4f6a6ff33677")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "SW13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rp2040-zero:RP2040-Zero")
+		(at 66.04 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1e810fc-bb97-4c3d-be56-2c92e9263ed6")
+		(property "Reference" "RZ1"
+			(at 68.2341 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RP2040-Zero"
+			(at 68.2341 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "RP2040-Zero:RP2040-Zero"
+			(at 68.2341 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "a52a89af-c899-48c6-86bd-09b48e39bddc")
+		)
+		(pin "4"
+			(uuid "8da82cf5-68f1-4f20-886f-a294e83bdb75")
+		)
+		(pin "5"
+			(uuid "6733cdcd-4f9b-4a79-933c-3facd321e7ba")
+		)
+		(pin "7"
+			(uuid "d6c7558b-32eb-4e3a-bf0a-6fec42301328")
+		)
+		(pin "9"
+			(uuid "d762747f-d37b-4bf5-ab3c-f170228ff417")
+		)
+		(pin "6"
+			(uuid "fdd3bacc-fe27-4284-98e1-c1d5c8264cce")
+		)
+		(pin "30"
+			(uuid "761e16a2-5671-49ce-a7ef-bdfb1251d556")
+		)
+		(pin "27"
+			(uuid "b6c82e69-6726-48f2-bbe7-5fef563121ca")
+		)
+		(pin "29"
+			(uuid "4691b8f0-2544-483d-a6dc-15bdd87fad98")
+		)
+		(pin "26"
+			(uuid "3c7830eb-3584-40bc-af14-e98b64be9d39")
+		)
+		(pin "2"
+			(uuid "bd03f0de-44ea-4021-a82b-f40b7ba18683")
+		)
+		(pin "14"
+			(uuid "ce3e8ba6-62a2-43ef-bc66-b81e0cb48647")
+		)
+		(pin "15"
+			(uuid "18bf0263-68e5-4fed-bd29-5a69bbca896e")
+		)
+		(pin "11"
+			(uuid "d0de00c2-2252-4c06-af0e-973080b47f9b")
+		)
+		(pin "3"
+			(uuid "1f414351-b1c8-4447-91e3-d94bd5cad2b4")
+		)
+		(pin "13"
+			(uuid "f74a1e64-c9d9-4354-b844-b4d54287b101")
+		)
+		(pin "0"
+			(uuid "e7745685-d3f1-476a-97f8-d7a58b802d4a")
+		)
+		(pin "1"
+			(uuid "4c13aed3-0b2d-4284-a9a9-5dc4c7a46dfd")
+		)
+		(pin "28"
+			(uuid "11ed408a-240e-41af-aa36-cb79ecb184cc")
+		)
+		(pin "8"
+			(uuid "ea11b860-3429-4ae5-a313-b63a9ad7d623")
+		)
+		(pin "10"
+			(uuid "cc02fa64-29b5-4145-8c8a-e230705330a8")
+		)
+		(pin "32"
+			(uuid "c18f8e61-c0f9-4d1f-878b-1d3071261038")
+		)
+		(pin "31"
+			(uuid "22b74d35-8ce6-41c4-a855-f8f81ff3aa78")
+		)
+		(instances
+			(project "SkyMusicPad"
+				(path "/892c3dfc-ea33-45ad-8367-abbb3e31e120"
+					(reference "RZ1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
