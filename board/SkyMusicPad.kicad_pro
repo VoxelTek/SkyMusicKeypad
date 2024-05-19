@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|51605000|55035000|3cffc300-da2d-4ef8-a8c3-a75af0ae6653|00000000-0000-0000-0000-000000000000",
+          "Centered footprint"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -79,6 +84,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
