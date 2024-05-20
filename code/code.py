@@ -26,14 +26,14 @@ from adafruit_hid.keycode import Keycode
 # "online" for the online Sky composor
 # or "game" for playing in the Sky PC demo
 
-mode = "online"
+mode = "game"
 print(mode)
 
 
 skyNotes = [60, 62, 64, 65, 67, 69, 71, 72, 74, 76, 77, 79, 81, 83, 84]
 
 keys_online = ["Q", "W", "E", "R", "T", "A", "S", "D", "F", "G", "Z", "X", "C", "V", "B"]
-keys_game = ["Y", "U", "I", "O", "P", "H", "J", "K", "L", ";", "N", "M", ",", ".", "/"]
+keys_game = ["Y", "U", "I", "O", "P", "H", "J", "K", "L", "SEMICOLON", "N", "M", "COMMA", "PERIOD", "FORWARD_SLASH"]
 
 #keys = [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
 
