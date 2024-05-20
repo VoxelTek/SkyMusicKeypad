@@ -27,9 +27,9 @@ class Ui_Dialog(object):
         Dialog.resize(600, 400)
         self.buttonBox = QDialogButtonBox(Dialog)
         self.buttonBox.setObjectName(u"buttonBox")
-        self.buttonBox.setGeometry(QRect(5, 350, 591, 41))
+        self.buttonBox.setGeometry(QRect(15, 350, 571, 41))
         self.buttonBox.setOrientation(Qt.Orientation.Horizontal)
-        self.buttonBox.setStandardButtons(QDialogButtonBox.StandardButton.Cancel|QDialogButtonBox.StandardButton.Help|QDialogButtonBox.StandardButton.Ok|QDialogButtonBox.StandardButton.Open|QDialogButtonBox.StandardButton.RestoreDefaults|QDialogButtonBox.StandardButton.Save)
+        self.buttonBox.setStandardButtons(QDialogButtonBox.StandardButton.Cancel|QDialogButtonBox.StandardButton.Discard|QDialogButtonBox.StandardButton.Help|QDialogButtonBox.StandardButton.Ok|QDialogButtonBox.StandardButton.Open|QDialogButtonBox.StandardButton.Save)
         self.buttonBox.setCenterButtons(False)
         self.keypadMode = QComboBox(Dialog)
         self.keypadMode.setObjectName(u"keypadMode")
@@ -255,6 +255,10 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_15, 2, 9, 1, 1)
 
+        self.label = QLabel(Dialog)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(0, 5, 121, 111))
+        self.label.setStyleSheet(u"image: url(:/logo/assets/SkyLogo.svg);")
 
         self.retranslateUi(Dialog)
         self.buttonBox.accepted.connect(Dialog.accept)
@@ -267,5 +271,6 @@ class Ui_Dialog(object):
         Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"Sky Keypad Companion", None))
         self.label_mapMode.setText(QCoreApplication.translate("Dialog", u"Keypad Mapping Mode:", None))
         self.label_device.setText(QCoreApplication.translate("Dialog", u"Device:", None))
+        self.label.setText("")
     # retranslateUi
 

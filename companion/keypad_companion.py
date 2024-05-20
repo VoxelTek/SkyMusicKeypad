@@ -12,6 +12,8 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
         Ui_MainWindow1.__init__(self)
         self.setupUi(self)
 
+        self.setFixedSize(600, 400)
+
         self.buttonBox.accepted.connect(self.accept)
         self.buttonBox.rejected.connect(self.reject)
         self.buttonBox.helpRequested.connect(self.help)

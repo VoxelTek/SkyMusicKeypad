@@ -16,9 +16,9 @@
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>5</x>
+     <x>15</x>
      <y>350</y>
-     <width>591</width>
+     <width>571</width>
      <height>41</height>
     </rect>
    </property>
@@ -26,7 +26,7 @@
     <enum>Qt::Orientation::Horizontal</enum>
    </property>
    <property name="standardButtons">
-    <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Help|QDialogButtonBox::StandardButton::Ok|QDialogButtonBox::StandardButton::Open|QDialogButtonBox::StandardButton::RestoreDefaults|QDialogButtonBox::StandardButton::Save</set>
+    <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Discard|QDialogButtonBox::StandardButton::Help|QDialogButtonBox::StandardButton::Ok|QDialogButtonBox::StandardButton::Open|QDialogButtonBox::StandardButton::Save</set>
    </property>
    <property name="centerButtons">
     <bool>false</bool>
@@ -557,6 +557,22 @@
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>5</y>
+     <width>121</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/logo/assets/SkyLogo.svg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
  </widget>
  <resources>
