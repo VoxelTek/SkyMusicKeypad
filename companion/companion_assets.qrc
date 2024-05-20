@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="keyIcons">
+    <file>assets/skyMusic_both.svg</file>
+    <file>assets/skyMusic_circle.svg</file>
+    <file>assets/skyMusic_square.svg</file>
+  </qresource>
+  <qresource prefix="logo">
+    <file>assets/SkyLogo.svg</file>
+  </qresource>
+</RCC>
