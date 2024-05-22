@@ -3,6 +3,9 @@ import webbrowser
 import companion_assets_rc
 from PyQt6 import QtWidgets, uic
 
+import serial
+from serial.tools import list_ports
+
 Ui_MainWindow1, QtBaseClass1 = uic.loadUiType("KeypadCompanion.ui")
 
 
@@ -35,7 +38,14 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
         pass
  
 
+
+def get_ports():
+    port = list(list_ports.comports())
+    for p in port:
+        print(p.device)
+
 if __name__ == "__main__":
+    get_ports()
     app = QtWidgets.QApplication(sys.argv)
     window = KeypadCompanion()
     window.show()
