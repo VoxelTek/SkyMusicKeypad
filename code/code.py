@@ -1,6 +1,9 @@
 import keypad
 import board
 
+import storage
+import json
+
 import random
 import time
 
@@ -25,9 +28,12 @@ from adafruit_hid.keycode import Keycode
 # Mode can be "midi" for MIDI output,
 # "online" for the online Sky composor
 # or "game" for playing in the Sky PC demo
+cfgFile = open("config.json", "r")
+
+config = json.load(cgfFile.read())
 
 mode = "game"
-print(mode)
+print("Mode = " + mode)
 
 
 skyNotes = [60, 62, 64, 65, 67, 69, 71, 72, 74, 76, 77, 79, 81, 83, 84]
