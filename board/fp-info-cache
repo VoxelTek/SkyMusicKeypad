@@ -1,4 +1,4 @@
-23470321129630075
+23479504374470582
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -77301,6 +77301,20 @@ LQFP QFP
 128
 128
 Package_QFP
+LQFP-144-1EP_20x20mm_P0.5mm_EP6.5x6.5mm
+LQFP, 144 Pin (https://www.infineon.com/cms/en/product/packages/PG-LQFP/PG-LQFP-144-22), generated with kicad-footprint-generator ipc_gullwing_generator.py
+LQFP QFP Infineon-PG-LQFP-144-24 Infineon-PG-LQFP-144-26
+0
+154
+145
+Package_QFP
+LQFP-144-1EP_20x20mm_P0.5mm_EP6.5x6.5mm_ThermalVias
+LQFP, 144 Pin (https://www.infineon.com/cms/en/product/packages/PG-LQFP/PG-LQFP-144-22), generated with kicad-footprint-generator ipc_gullwing_generator.py
+LQFP QFP Infineon-PG-LQFP-144-24 Infineon-PG-LQFP-144-26
+0
+171
+145
+Package_QFP
 LQFP-144_20x20mm_P0.5mm
 LQFP, 144 Pin (http://ww1.microchip.com/downloads/en/PackagingSpec/00000049BQ.pdf#page=425), generated with kicad-footprint-generator ipc_gullwing_generator.py
 LQFP QFP
@@ -86017,8 +86031,8 @@ AXICOM IM-Series Relay SPDT
 8
 Relay_THT
 Relay_DPDT_Finder_40.52
-Relay DPDT Finder 40.52, Pitch 5mm/7.5mm, https://www.finder-relais.net/de/finder-relais-serie-40.pdf
-Relay DPDT Finder 40.52 Pitch 5mm
+DPDT relay, Finder 40.52, 8A, 250V, body size 29x12.4mm, height 25mm, pitch 5x7.5mm, https://cdn.findernet.com/app/uploads/S40EN.pdf
+2-Form-C
 0
 8
 8
@@ -86199,29 +86213,29 @@ spdt relay
 5
 Relay_THT
 Relay_SPDT_Finder_40.11
-Relay SPDT Finder 40.11, https://www.finder-relais.net/de/finder-relais-serie-40.pdf
-Relay SPDT Finder 40.11 
+Relay SPDT Finder 40.11, 10/16A, 250V, body size 28.5x26.3mm, height 12.7mm, https://web.archive.org/web/20170816081018if_/https://www.finder-relais.net/de/finder-relais-serie-40.pdf
+1-Form-C
 0
 5
 5
 Relay_THT
 Relay_SPDT_Finder_40.31
-Relay DPDT Finder 40.31, Pitch 3.5mm/7.5mm, https://www.finder-relais.net/de/finder-relais-serie-40.pdf
-Relay DPDT Finder 40.31 Pitch 3.5mm
+DPDT relay, Finder 40.52, 10/12A, 250V, body size 29x12.4mm, height 25mm, pitch 3.5x7.5mm, https://cdn.findernet.com/app/uploads/S40EN.pdf
+1-Form-C
 0
 5
 5
 Relay_THT
 Relay_SPDT_Finder_40.41
-Relay DPDT Finder 40.41, Pitch 3.5mm/7.5mm, https://www.finder-relais.net/de/finder-relais-serie-40.pdf
-Relay DPDT Finder 40.41 Pitch 3.5mm
+Relay SPDT Finder 40.11, 10A, 250V, body size 28.5x12.3mm, height 26.3mm, https://web.archive.org/web/20170816081018if_/https://www.finder-relais.net/de/finder-relais-serie-40.pdf
+1-Form-C
 0
 5
 5
 Relay_THT
 Relay_SPDT_Finder_40.51
-Relay DPDT Finder 40.51, Pitch 5mm/7.5mm, https://www.finder-relais.net/de/finder-relais-serie-40.pdf
-Relay DPDT Finder 40.51 Pitch 5mm
+SPDT relay, Finder 40.52, 10/12A, 250V, body size 29x12.4mm, height 25mm, pitch 5x7.5mm, https://cdn.findernet.com/app/uploads/S40EN.pdf
+1-Form-C
 0
 5
 5
@@ -88556,6 +88570,13 @@ LEM Hall Effect Voltage transducer
 0
 5
 5
+SkyMusic
+SW_Cherry_MX_1.00u_PCB
+Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf
+Cherry MX keyswitch 1.00u PCB
+0
+2
+2
 Socket
 3M_Textool_240-1288-00-0602J_2x20_P2.54mm
 3M 40-pin zero insertion force socket, though-hole, row spacing 25.4 mm (1000 mils)

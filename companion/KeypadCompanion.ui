@@ -89,7 +89,7 @@
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="9">
-     <widget class="QLineEdit" name="lineEdit_5">
+     <widget class="QLineEdit" name="lineEdit_05">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -100,6 +100,9 @@
        <font>
         <pointsize>15</pointsize>
        </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
       </property>
       <property name="styleSheet">
        <string notr="true">image: url(:/keyIcons/assets/skyMusic_circle.svg);</string>
@@ -116,10 +119,13 @@
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
+      </property>
      </widget>
     </item>
     <item row="0" column="8">
-     <widget class="QLineEdit" name="lineEdit_4">
+     <widget class="QLineEdit" name="lineEdit_04">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -130,6 +136,9 @@
        <font>
         <pointsize>15</pointsize>
        </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
       </property>
       <property name="autoFillBackground">
        <bool>false</bool>
@@ -149,10 +158,13 @@
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
+      </property>
      </widget>
     </item>
     <item row="0" column="5">
-     <widget class="QLineEdit" name="lineEdit_1">
+     <widget class="QLineEdit" name="lineEdit_01">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -163,6 +175,9 @@
        <font>
         <pointsize>15</pointsize>
        </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
       </property>
       <property name="styleSheet">
        <string notr="true">image: url(:/keyIcons/assets/skyMusic_both.svg);</string>
@@ -179,10 +194,13 @@
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
+      </property>
      </widget>
     </item>
     <item row="1" column="8">
-     <widget class="QLineEdit" name="lineEdit_9">
+     <widget class="QLineEdit" name="lineEdit_09">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -193,6 +211,9 @@
        <font>
         <pointsize>15</pointsize>
        </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
       </property>
       <property name="autoFillBackground">
        <bool>false</bool>
@@ -212,10 +233,13 @@
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
+      </property>
      </widget>
     </item>
     <item row="0" column="7">
-     <widget class="QLineEdit" name="lineEdit_3">
+     <widget class="QLineEdit" name="lineEdit_03">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -226,6 +250,9 @@
        <font>
         <pointsize>15</pointsize>
        </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
       </property>
       <property name="styleSheet">
        <string notr="true">image: url(:/keyIcons/assets/skyMusic_circle.svg);</string>
@@ -241,6 +268,9 @@
       </property>
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
       </property>
      </widget>
     </item>
@@ -257,6 +287,9 @@
         <pointsize>15</pointsize>
        </font>
       </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
       <property name="styleSheet">
        <string notr="true">image: url(:/keyIcons/assets/skyMusic_circle.svg);</string>
       </property>
@@ -272,10 +305,13 @@
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
+      </property>
      </widget>
     </item>
     <item row="0" column="6">
-     <widget class="QLineEdit" name="lineEdit_2">
+     <widget class="QLineEdit" name="lineEdit_02">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -286,6 +322,9 @@
        <font>
         <pointsize>15</pointsize>
        </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
       </property>
       <property name="autoFillBackground">
        <bool>false</bool>
@@ -305,10 +344,13 @@
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
+      </property>
      </widget>
     </item>
     <item row="1" column="5">
-     <widget class="QLineEdit" name="lineEdit_6">
+     <widget class="QLineEdit" name="lineEdit_06">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -319,6 +361,9 @@
        <font>
         <pointsize>15</pointsize>
        </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
       </property>
       <property name="styleSheet">
        <string notr="true">image: url(:/keyIcons/assets/skyMusic_circle.svg);</string>
@@ -335,10 +380,13 @@
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
+      </property>
      </widget>
     </item>
     <item row="1" column="7">
-     <widget class="QLineEdit" name="lineEdit_8">
+     <widget class="QLineEdit" name="lineEdit_08">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -349,6 +397,9 @@
        <font>
         <pointsize>15</pointsize>
        </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
       </property>
       <property name="styleSheet">
        <string notr="true">image: url(:/keyIcons/assets/skyMusic_both.svg);</string>
@@ -365,10 +416,13 @@
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
+      </property>
      </widget>
     </item>
     <item row="1" column="6">
-     <widget class="QLineEdit" name="lineEdit_7">
+     <widget class="QLineEdit" name="lineEdit_07">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -379,6 +433,9 @@
        <font>
         <pointsize>15</pointsize>
        </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
       </property>
       <property name="autoFillBackground">
        <bool>false</bool>
@@ -397,6 +454,9 @@
       </property>
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
       </property>
      </widget>
     </item>
@@ -413,6 +473,9 @@
         <pointsize>15</pointsize>
        </font>
       </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
       <property name="styleSheet">
        <string notr="true">image: url(:/keyIcons/assets/skyMusic_circle.svg);</string>
       </property>
@@ -427,6 +490,9 @@
       </property>
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
       </property>
      </widget>
     </item>
@@ -443,6 +509,9 @@
         <pointsize>15</pointsize>
        </font>
       </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
       <property name="autoFillBackground">
        <bool>false</bool>
       </property>
@@ -460,6 +529,9 @@
       </property>
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
       </property>
      </widget>
     </item>
@@ -476,6 +548,9 @@
         <pointsize>15</pointsize>
        </font>
       </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
       <property name="styleSheet">
        <string notr="true">image: url(:/keyIcons/assets/skyMusic_circle.svg);</string>
       </property>
@@ -491,6 +566,9 @@
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
+      </property>
      </widget>
     </item>
     <item row="2" column="8">
@@ -505,6 +583,9 @@
        <font>
         <pointsize>15</pointsize>
        </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
       </property>
       <property name="autoFillBackground">
        <bool>false</bool>
@@ -524,6 +605,9 @@
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
+      </property>
      </widget>
     </item>
     <item row="2" column="9">
@@ -539,6 +623,9 @@
         <pointsize>15</pointsize>
        </font>
       </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
       <property name="styleSheet">
        <string notr="true">image: url(:/keyIcons/assets/skyMusic_both.svg);</string>
       </property>
@@ -553,6 +640,9 @@
       </property>
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
       </property>
      </widget>
     </item>
