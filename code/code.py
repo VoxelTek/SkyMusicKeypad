@@ -52,7 +52,7 @@ km = keypad.KeyMatrix(
     columns_to_anodes=True,
 )
 
-enc = rotaryio.IncrementalEncoder(board.GP14, board.GP13)
+enc = rotaryio.IncrementalEncoder(board.GP5, board.GP6)
 last_position = None
 
 btn = DigitalInOut(board.GP15)
