@@ -43,11 +43,12 @@ keys_game = ["Y", "U", "I", "O", "P", "H", "J", "K", "L", "SEMICOLON", "N", "M",
 
 #keys = [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
 
+noteOffset = 0
 octaveOffset = 0
 
 km = keypad.KeyMatrix(
-    row_pins=(board.GP12, board.GP11, board.GP10),
-    column_pins=(board.GP6, board.GP5, board.GP4, board.GP3, board.GP2),
+    row_pins=(board.GP8, board.GP9, board.GP10),
+    column_pins=(board.GP14, board.GP15, board.GP26, board.GP27, board.GP28),
     columns_to_anodes=True,
 )
 
@@ -81,11 +82,12 @@ elif mode == "online" or mode == "game":
 
 while True:
     position = enc.position
-    octaveOffset = position
+    noteOffset = position % 12
+    enc.position = noteOffset
     event = km.events.get()
     if event:
         if mode == "midi":
-            note = skyNotes[event.key_number] + octaveOffset
+            note = skyNotes[event.key_number] + noteOffset + (octaveOffset * 12)
             if event.pressed:
                 midi.send(NoteOn(note, 120))
             elif not event.pressed:
@@ -100,9 +102,18 @@ while True:
                 print("Received:", msg, "at", time.monotonic())
 
             cur_state = btn.value
-            if cur_state != prev_state:
-                if not cur_state:
+            if not cur_state:
+                octaveAdjust = False
+                while (not cur_state):
+                    if position != enc.position:
+                        octaveOffset = (enc.position - position)
+                        octaveAdjust = True
+
+                if not octaveAdjust:
                     enc.position = 0
+                else:
+                    enc.position = position
+
 
             prev_state = cur_state
 
