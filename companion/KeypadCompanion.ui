@@ -665,6 +665,25 @@
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>device</tabstop>
+  <tabstop>keypadMode</tabstop>
+  <tabstop>lineEdit_01</tabstop>
+  <tabstop>lineEdit_02</tabstop>
+  <tabstop>lineEdit_03</tabstop>
+  <tabstop>lineEdit_04</tabstop>
+  <tabstop>lineEdit_05</tabstop>
+  <tabstop>lineEdit_06</tabstop>
+  <tabstop>lineEdit_07</tabstop>
+  <tabstop>lineEdit_08</tabstop>
+  <tabstop>lineEdit_09</tabstop>
+  <tabstop>lineEdit_10</tabstop>
+  <tabstop>lineEdit_11</tabstop>
+  <tabstop>lineEdit_12</tabstop>
+  <tabstop>lineEdit_13</tabstop>
+  <tabstop>lineEdit_14</tabstop>
+  <tabstop>lineEdit_15</tabstop>
+ </tabstops>
  <resources>
   <include location="companion_assets.qrc"/>
  </resources>

@@ -826,16 +826,6 @@
 		(sheetfile "SkyMusicPad.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start 9.59 -11)
-			(end -9.66 -11)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f6820d8a-2e9c-4e7a-8857-a54466820bea")
-		)
-		(fp_line
 			(start -9.66 -11)
 			(end -9.66 13.2)
 			(stroke
@@ -2331,7 +2321,7 @@
 	(footprint "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
 		(layer "F.Cu")
 		(uuid "6cd99123-def7-4aec-9967-417e44643e85")
-		(at 44.8 81.26)
+		(at 44.75 81.25)
 		(descr "Mounting Hole 2.2mm, M2")
 		(tags "mounting hole 2.2mm m2")
 		(property "Reference" "H3"
@@ -3735,7 +3725,7 @@
 	(footprint "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
 		(layer "F.Cu")
 		(uuid "9b61cd67-5deb-42f4-99c5-7026beafed1f")
-		(at 165 28.76)
+		(at 164.75 28.75)
 		(descr "Mounting Hole 2.2mm, M2")
 		(tags "mounting hole 2.2mm m2")
 		(property "Reference" "H2"
@@ -6326,7 +6316,7 @@
 	(footprint "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
 		(layer "F.Cu")
 		(uuid "e49f63c5-69bc-4c8b-95ca-3b6d71b2c527")
-		(at 44.8 28.76)
+		(at 44.75 28.75)
 		(descr "Mounting Hole 2.2mm, M2")
 		(tags "mounting hole 2.2mm m2")
 		(property "Reference" "H1"
@@ -6541,7 +6531,7 @@
 	(footprint "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
 		(layer "F.Cu")
 		(uuid "f11ddfbc-b926-434c-a89b-951c0271ffa9")
-		(at 165 81.26)
+		(at 164.75 81.25)
 		(descr "Mounting Hole 2.2mm, M2")
 		(tags "mounting hole 2.2mm m2")
 		(property "Reference" "H4"
@@ -12420,6 +12410,19 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "ec0aba94-4f0c-4eb3-8a67-78d501f9ca35")
+	)
+	(gr_text "Designed by @voxeltek and @citacritta\nAssembled by hand in Australia\n\n\n\n\n\n\nThis is an unnofficial community project"
+		(at 104.75 54.75 0)
+		(layer "B.SilkS")
+		(uuid "fdcd17dc-ff0e-4953-93f9-b384c64cc231")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify mirror)
+		)
 	)
 	(segment
 		(start 89 44)
