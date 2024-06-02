@@ -114,6 +114,7 @@
 			(plotfptext yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)

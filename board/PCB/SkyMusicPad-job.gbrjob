@@ -3,9 +3,9 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "8.99.0-unknown-3024a7c569~178~ubuntu22.04.1"
+      "Version": "8.99.0-unknown-e3e63fb1b8~178~ubuntu22.04.1"
     },
-    "CreationDate": "2024-05-19T15:23:00+10:00"
+    "CreationDate": "2024-06-01T22:38:45+10:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,7 +14,7 @@
       "Revision": "rev?"
     },
     "Size": {
-      "X": 117.6,
+      "X": 130.1,
       "Y": 62.6
     },
     "LayerNumber": 2,
@@ -90,6 +90,7 @@
     },
     {
       "Type": "SolderMask",
+      "Color": "R0G139B0",
       "Thickness": 0.01,
       "Name": "Top Solder Mask"
     },
@@ -100,6 +101,7 @@
     },
     {
       "Type": "Dielectric",
+      "Color": "R109G116B75",
       "Thickness": 1.51,
       "Material": "FR4",
       "Name": "F.Cu/B.Cu",
@@ -112,6 +114,7 @@
     },
     {
       "Type": "SolderMask",
+      "Color": "R0G139B0",
       "Thickness": 0.01,
       "Name": "Bottom Solder Mask"
     },
