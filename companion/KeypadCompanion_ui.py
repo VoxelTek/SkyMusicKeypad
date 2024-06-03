@@ -16,8 +16,10 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QAbstractButton, QApplication, QComboBox, QDialog,
-    QDialogButtonBox, QGridLayout, QLabel, QLineEdit,
-    QSizePolicy, QWidget)
+    QDialogButtonBox, QGridLayout, QLabel, QSizePolicy,
+    QWidget)
+
+from keybindedit import keybindEdit
 import companion_assets_rc
 
 class Ui_Dialog(object):
@@ -49,7 +51,7 @@ class Ui_Dialog(object):
         self.gridLayout = QGridLayout(self.gridLayoutWidget)
         self.gridLayout.setObjectName(u"gridLayout")
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
-        self.lineEdit_05 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_05 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_05.setObjectName(u"lineEdit_05")
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
@@ -69,7 +71,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_05, 0, 9, 1, 1)
 
-        self.lineEdit_04 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_04 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_04.setObjectName(u"lineEdit_04")
         sizePolicy.setHeightForWidth(self.lineEdit_04.sizePolicy().hasHeightForWidth())
         self.lineEdit_04.setSizePolicy(sizePolicy)
@@ -85,7 +87,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_04, 0, 8, 1, 1)
 
-        self.lineEdit_01 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_01 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_01.setObjectName(u"lineEdit_01")
         sizePolicy.setHeightForWidth(self.lineEdit_01.sizePolicy().hasHeightForWidth())
         self.lineEdit_01.setSizePolicy(sizePolicy)
@@ -100,7 +102,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_01, 0, 5, 1, 1)
 
-        self.lineEdit_09 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_09 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_09.setObjectName(u"lineEdit_09")
         sizePolicy.setHeightForWidth(self.lineEdit_09.sizePolicy().hasHeightForWidth())
         self.lineEdit_09.setSizePolicy(sizePolicy)
@@ -116,7 +118,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_09, 1, 8, 1, 1)
 
-        self.lineEdit_03 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_03 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_03.setObjectName(u"lineEdit_03")
         sizePolicy.setHeightForWidth(self.lineEdit_03.sizePolicy().hasHeightForWidth())
         self.lineEdit_03.setSizePolicy(sizePolicy)
@@ -131,7 +133,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_03, 0, 7, 1, 1)
 
-        self.lineEdit_10 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_10 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_10.setObjectName(u"lineEdit_10")
         sizePolicy.setHeightForWidth(self.lineEdit_10.sizePolicy().hasHeightForWidth())
         self.lineEdit_10.setSizePolicy(sizePolicy)
@@ -146,7 +148,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_10, 1, 9, 1, 1)
 
-        self.lineEdit_02 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_02 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_02.setObjectName(u"lineEdit_02")
         sizePolicy.setHeightForWidth(self.lineEdit_02.sizePolicy().hasHeightForWidth())
         self.lineEdit_02.setSizePolicy(sizePolicy)
@@ -162,7 +164,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_02, 0, 6, 1, 1)
 
-        self.lineEdit_06 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_06 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_06.setObjectName(u"lineEdit_06")
         sizePolicy.setHeightForWidth(self.lineEdit_06.sizePolicy().hasHeightForWidth())
         self.lineEdit_06.setSizePolicy(sizePolicy)
@@ -177,7 +179,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_06, 1, 5, 1, 1)
 
-        self.lineEdit_08 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_08 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_08.setObjectName(u"lineEdit_08")
         sizePolicy.setHeightForWidth(self.lineEdit_08.sizePolicy().hasHeightForWidth())
         self.lineEdit_08.setSizePolicy(sizePolicy)
@@ -192,7 +194,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_08, 1, 7, 1, 1)
 
-        self.lineEdit_07 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_07 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_07.setObjectName(u"lineEdit_07")
         sizePolicy.setHeightForWidth(self.lineEdit_07.sizePolicy().hasHeightForWidth())
         self.lineEdit_07.setSizePolicy(sizePolicy)
@@ -208,7 +210,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_07, 1, 6, 1, 1)
 
-        self.lineEdit_11 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_11 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_11.setObjectName(u"lineEdit_11")
         sizePolicy.setHeightForWidth(self.lineEdit_11.sizePolicy().hasHeightForWidth())
         self.lineEdit_11.setSizePolicy(sizePolicy)
@@ -223,7 +225,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_11, 2, 5, 1, 1)
 
-        self.lineEdit_12 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_12 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_12.setObjectName(u"lineEdit_12")
         sizePolicy.setHeightForWidth(self.lineEdit_12.sizePolicy().hasHeightForWidth())
         self.lineEdit_12.setSizePolicy(sizePolicy)
@@ -239,7 +241,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_12, 2, 6, 1, 1)
 
-        self.lineEdit_13 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_13 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_13.setObjectName(u"lineEdit_13")
         sizePolicy.setHeightForWidth(self.lineEdit_13.sizePolicy().hasHeightForWidth())
         self.lineEdit_13.setSizePolicy(sizePolicy)
@@ -254,7 +256,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_13, 2, 7, 1, 1)
 
-        self.lineEdit_14 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_14 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_14.setObjectName(u"lineEdit_14")
         sizePolicy.setHeightForWidth(self.lineEdit_14.sizePolicy().hasHeightForWidth())
         self.lineEdit_14.setSizePolicy(sizePolicy)
@@ -270,7 +272,7 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_14, 2, 8, 1, 1)
 
-        self.lineEdit_15 = QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_15 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_15.setObjectName(u"lineEdit_15")
         sizePolicy.setHeightForWidth(self.lineEdit_15.sizePolicy().hasHeightForWidth())
         self.lineEdit_15.setSizePolicy(sizePolicy)
@@ -285,10 +287,18 @@ class Ui_Dialog(object):
 
         self.gridLayout.addWidget(self.lineEdit_15, 2, 9, 1, 1)
 
-        self.label = QLabel(Dialog)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(0, 5, 121, 111))
-        self.label.setStyleSheet(u"image: url(:/logo/assets/SkyLogo.svg);")
+        self.skyLogo = QLabel(Dialog)
+        self.skyLogo.setObjectName(u"skyLogo")
+        self.skyLogo.setGeometry(QRect(0, 5, 121, 111))
+        self.skyLogo.setStyleSheet(u"image: url(:/logo/assets/SkyLogo.svg);")
+        self.validLabel = QLabel(Dialog)
+        self.validLabel.setObjectName(u"validLabel")
+        self.validLabel.setEnabled(False)
+        self.validLabel.setGeometry(QRect(400, 2, 100, 36))
+        self.validLabel.setCursor(QCursor(Qt.ArrowCursor))
+        self.validLabel.setAutoFillBackground(False)
+        self.validLabel.setStyleSheet(u"color: rgb(255, 0, 0);")
+        self.validLabel.setLineWidth(1)
         QWidget.setTabOrder(self.device, self.keypadMode)
         QWidget.setTabOrder(self.keypadMode, self.lineEdit_01)
         QWidget.setTabOrder(self.lineEdit_01, self.lineEdit_02)
@@ -307,8 +317,6 @@ class Ui_Dialog(object):
         QWidget.setTabOrder(self.lineEdit_14, self.lineEdit_15)
 
         self.retranslateUi(Dialog)
-        self.buttonBox.accepted.connect(Dialog.accept)
-        self.buttonBox.rejected.connect(Dialog.reject)
 
         QMetaObject.connectSlotsByName(Dialog)
     # setupUi
@@ -317,6 +325,7 @@ class Ui_Dialog(object):
         Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"Sky Keypad Companion", None))
         self.label_mapMode.setText(QCoreApplication.translate("Dialog", u"Keypad Mapping Mode:", None))
         self.label_device.setText(QCoreApplication.translate("Dialog", u"Device:", None))
-        self.label.setText("")
+        self.skyLogo.setText("")
+        self.validLabel.setText(QCoreApplication.translate("Dialog", u"Invalid Device!", None))
     # retranslateUi
 

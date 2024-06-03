@@ -89,7 +89,7 @@
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="9">
-     <widget class="QLineEdit" name="lineEdit_05">
+     <widget class="keybindEdit" name="lineEdit_05">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -125,7 +125,7 @@
      </widget>
     </item>
     <item row="0" column="8">
-     <widget class="QLineEdit" name="lineEdit_04">
+     <widget class="keybindEdit" name="lineEdit_04">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -164,7 +164,7 @@
      </widget>
     </item>
     <item row="0" column="5">
-     <widget class="QLineEdit" name="lineEdit_01">
+     <widget class="keybindEdit" name="lineEdit_01">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -200,7 +200,7 @@
      </widget>
     </item>
     <item row="1" column="8">
-     <widget class="QLineEdit" name="lineEdit_09">
+     <widget class="keybindEdit" name="lineEdit_09">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -239,7 +239,7 @@
      </widget>
     </item>
     <item row="0" column="7">
-     <widget class="QLineEdit" name="lineEdit_03">
+     <widget class="keybindEdit" name="lineEdit_03">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -275,7 +275,7 @@
      </widget>
     </item>
     <item row="1" column="9">
-     <widget class="QLineEdit" name="lineEdit_10">
+     <widget class="keybindEdit" name="lineEdit_10">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -311,7 +311,7 @@
      </widget>
     </item>
     <item row="0" column="6">
-     <widget class="QLineEdit" name="lineEdit_02">
+     <widget class="keybindEdit" name="lineEdit_02">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -350,7 +350,7 @@
      </widget>
     </item>
     <item row="1" column="5">
-     <widget class="QLineEdit" name="lineEdit_06">
+     <widget class="keybindEdit" name="lineEdit_06">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -386,7 +386,7 @@
      </widget>
     </item>
     <item row="1" column="7">
-     <widget class="QLineEdit" name="lineEdit_08">
+     <widget class="keybindEdit" name="lineEdit_08">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -422,7 +422,7 @@
      </widget>
     </item>
     <item row="1" column="6">
-     <widget class="QLineEdit" name="lineEdit_07">
+     <widget class="keybindEdit" name="lineEdit_07">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -461,7 +461,7 @@
      </widget>
     </item>
     <item row="2" column="5">
-     <widget class="QLineEdit" name="lineEdit_11">
+     <widget class="keybindEdit" name="lineEdit_11">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -497,7 +497,7 @@
      </widget>
     </item>
     <item row="2" column="6">
-     <widget class="QLineEdit" name="lineEdit_12">
+     <widget class="keybindEdit" name="lineEdit_12">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -536,7 +536,7 @@
      </widget>
     </item>
     <item row="2" column="7">
-     <widget class="QLineEdit" name="lineEdit_13">
+     <widget class="keybindEdit" name="lineEdit_13">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -572,7 +572,7 @@
      </widget>
     </item>
     <item row="2" column="8">
-     <widget class="QLineEdit" name="lineEdit_14">
+     <widget class="keybindEdit" name="lineEdit_14">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -611,7 +611,7 @@
      </widget>
     </item>
     <item row="2" column="9">
-     <widget class="QLineEdit" name="lineEdit_15">
+     <widget class="keybindEdit" name="lineEdit_15">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -648,7 +648,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="skyLogo">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -664,7 +664,42 @@
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="validLabel">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>2</y>
+     <width>100</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string>Invalid Device!</string>
+   </property>
+  </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>keybindEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">keybindedit.h</header>
+  </customwidget>
+ </customwidgets>
  <tabstops>
   <tabstop>device</tabstop>
   <tabstop>keypadMode</tabstop>
@@ -687,38 +722,8 @@
  <resources>
   <include location="companion_assets.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>Dialog</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>Dialog</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
+ <slots>
+  <slot>help()</slot>
+ </slots>
 </ui>

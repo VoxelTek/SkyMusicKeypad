@@ -1,8 +1,10 @@
-import keypad
-import board
+import usb_cdc
 
 import storage
 import json
+
+import keypad
+import board
 
 import random
 import time
@@ -23,6 +25,7 @@ from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
 
 
+serial = usb_cdc.data
 
 
 # Mode can be "midi" for MIDI output,
@@ -81,8 +84,28 @@ elif mode == "online" or mode == "game":
     kbd = Keyboard(usb_hid.devices)
     print("keyboard mode")
 
+def decodeData(data):
+    data = json.loads(data)
+
+    if data['type'] == 'ping':
+        pingResponse = {"type": "pong"}
+        serial.write((json.dumps(pingResponse) + '\n').encode('utf-8'))
+
+
+def checkSerial():
+    if serial.in_waiting > 0:
+        print(serial.in_waiting)
+        data = serial.readline()
+        print(data)
+        print(type(data))
+        data = data.decode('utf-8').strip()
+        print(data)
+        print(type(data))
+        decodeData(data)
+
 
 while True:
+    checkSerial()
     position = enc.position
     noteOffset = position % 12
     enc.position = noteOffset
