@@ -44,6 +44,8 @@ def get_ports():
     for p in port:
         print(p.device)
 
+
+
 if __name__ == "__main__":
     get_ports()
     app = QtWidgets.QApplication(sys.argv)

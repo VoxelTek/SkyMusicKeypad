@@ -28,18 +28,18 @@ from adafruit_hid.keycode import Keycode
 # Mode can be "midi" for MIDI output,
 # "online" for the online Sky composor
 # or "game" for playing in the Sky PC demo
-cfgFile = open("config.json", "r")
 
-config = json.load(cgfFile.read())
+with open('config.json') as f:
+    config = json.load(f)
 
-mode = "game"
+mode = config["mode"]
 print("Mode = " + mode)
 
 
-skyNotes = [60, 62, 64, 65, 67, 69, 71, 72, 74, 76, 77, 79, 81, 83, 84]
+skyNotes = config["midi"]
 
-keys_online = ["Q", "W", "E", "R", "T", "A", "S", "D", "F", "G", "Z", "X", "C", "V", "B"]
-keys_game = ["Y", "U", "I", "O", "P", "H", "J", "K", "L", "SEMICOLON", "N", "M", "COMMA", "PERIOD", "FORWARD_SLASH"]
+keys_online = config["modes"]["online"]
+keys_game = config["modes"]["game"]
 
 #keys = [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
 
@@ -55,7 +55,7 @@ km = keypad.KeyMatrix(
 enc = rotaryio.IncrementalEncoder(board.GP5, board.GP6)
 last_position = None
 
-btn = DigitalInOut(board.GP15)
+btn = DigitalInOut(board.GP4)
 btn.direction = Direction.INPUT
 btn.pull = Pull.UP
 
@@ -73,6 +73,8 @@ if mode == "midi":
     print("Default output channel:", midi.out_channel + 1)
 
     print("Listening on input channel:", midi.in_channel + 1)
+
+    midi.send(ControlChange(0x10, 0))
 
 
 elif mode == "online" or mode == "game":
@@ -95,16 +97,17 @@ while True:
 
             if last_position is None or position != last_position:
                 print(position)
+                midi.send(ControlChange(0x10, noteOffset))
             last_position = position
 
             msg = midi.receive()
             if msg is not None:
                 print("Received:", msg, "at", time.monotonic())
 
-            cur_state = btn.value
-            if not cur_state:
+            cur_state = btn.value # Get if button is pushed
+            if not btn.value:
                 octaveAdjust = False
-                while (not cur_state):
+                while (not btn.value):
                     if position != enc.position:
                         octaveOffset = (enc.position - position)
                         octaveAdjust = True
