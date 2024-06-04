@@ -13,6 +13,8 @@ from serial.tools import list_ports
 import companion_assets_rc
 import KeypadCompanion_ui
 
+app = QtWidgets.QApplication(sys.argv)
+
 Ui_MainWindow1, QtBaseClass1 = uic.loadUiType("KeypadCompanion.ui")
 
 class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
@@ -34,13 +36,13 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Open).clicked.connect(self.open)
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Discard).clicked.connect(self.discard)
 
+        self.deviceRefresh.clicked.connect(self.get_ports)
+
         self.validLabel.hide()
         self.noDevice.show()
         self.keypadMode.enabled = False
 
         self.get_ports()
-        self.device.setCurrentIndex(-1)
-        self.device.currentIndexChanged.connect(self.switchToSerial)
 
         self.fileDialog = QtWidgets.QFileDialog()
         self.fileDialog.setFileMode(QtWidgets.QFileDialog.FileMode.AnyFile)
@@ -49,9 +51,11 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
     def accept(self):
         #print("accept")
         self.pushSettings()
+        self.ser.close()
         self.close()
     def reject(self):
         #print("reject")
+        self.ser.close()
         self.close()
 
     def help(self):
@@ -163,6 +167,7 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
         self.ser.write(request_string)
 
         response = self.ser.readline().decode('utf-8').strip()
+        
         response = json.loads(response)
 
         self.config = response["cfgdata"]
@@ -201,6 +206,10 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
         #self.checkIfValidDevice()
     
     def get_ports(self):
+        try:
+            self.device.currentIndexChanged.disconnect(self.switchToSerial)
+        except:
+            pass
         self.device.clear()
         port = list(list_ports.comports())
         if port != []:
@@ -212,11 +221,13 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
         for p in port:
             #print(p.device)
             self.device.addItem(p.device)
+        self.device.setCurrentIndex(-1)
+        self.device.currentIndexChanged.connect(self.switchToSerial)
 
 
 
 if __name__ == "__main__":
-    app = QtWidgets.QApplication(sys.argv)
+    
     window = KeypadCompanion()
     window.show()
 

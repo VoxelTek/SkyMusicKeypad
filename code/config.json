@@ -45,12 +45,12 @@
       "J",
       "K",
       "L",
-      "SEMICOLON",
+      ";",
       "N",
       "M",
-      "COMMA",
-      "PERIOD",
-      "FORWARD_SLASH"
+      ",",
+      ".",
+      "/"
     ]
   }
 }

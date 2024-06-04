@@ -24,17 +24,16 @@ from digitalio import DigitalInOut, Direction, Pull
 
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
+from adafruit_hid.keyboard_layout_us import KeyboardLayout
 
 
 serial = usb_cdc.data
 
-
-# Mode can be "midi" for MIDI output,
-# "online" for the online Sky composor
-# or "game" for playing in the Sky PC demo
+global config
 
 with open('config.json') as f:
     config = json.load(f)
+
 
 mode = config["mode"]
 print("Mode = " + mode)
@@ -42,8 +41,10 @@ print("Mode = " + mode)
 
 skyNotes = config["midi"]
 
-keys_online = config["modes"]["online"]
-keys_game = config["modes"]["game"]
+keyModes = config["modes"]
+
+#keys_online = config["modes"]["online"]
+#keys_game = config["modes"]["game"]
 
 #keys = [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
 
@@ -81,14 +82,16 @@ if mode == "midi":
     midi.send(ControlChange(0x10, 0))
 
 
-elif mode == "online" or mode == "game":
+else:
     kbd = Keyboard(usb_hid.devices)
+    layout = KeyboardLayout(kbd)
     print("keyboard mode")
 
 
 def writeConfig():
-    with open('config.json') as f:
-        json.dump(config, f)
+    storage.remount("/", readonly=False)
+    cfgFile = open('config.json', "w")
+    json.dump(config, cfgFile)
     supervisor.reload()
 
 
@@ -97,8 +100,10 @@ def sendjson(stream):
 
 
 def decodeData(data):
-    data = json.loads(data)
+    global config
 
+    data = json.loads(data)
+    print(data)
     if data['type'] == 'ping':
         pingResponse = {"type": "pong"}
         sendjson(pingResponse)
@@ -115,6 +120,7 @@ def checkSerial():
         print(serial.in_waiting)
         data = serial.readline()
         data = data.decode('utf-8').strip()
+        print(data)
         decodeData(data)
 
 
@@ -124,6 +130,31 @@ while True:
     noteOffset = position % 12
     enc.position = noteOffset
     event = km.events.get()
+    if mode == "midi":
+        if last_position is None or position != last_position:
+                print(position)
+                midi.send(ControlChange(0x10, noteOffset))
+            last_position = position
+
+        msg = midi.receive()
+        if msg is not None:
+            print("Received:", msg, "at", time.monotonic())
+
+        cur_state = btn.value # Get if button is pushed
+        if not btn.value:
+            octaveAdjust = False
+            while (not btn.value):
+                if position != enc.position:
+                    octaveOffset = (enc.position - position)
+                    octaveAdjust = True
+
+            if not octaveAdjust:
+                enc.position = 0
+            else:
+                enc.position = position
+        prev_state = cur_state
+
+
     if event:
         if mode == "midi":
             note = skyNotes[event.key_number] + noteOffset + (octaveOffset * 12)
@@ -131,39 +162,8 @@ while True:
                 midi.send(NoteOn(note, 120))
             elif not event.pressed:
                 midi.send(NoteOff(note, 120))
-
-            if last_position is None or position != last_position:
-                print(position)
-                midi.send(ControlChange(0x10, noteOffset))
-            last_position = position
-
-            msg = midi.receive()
-            if msg is not None:
-                print("Received:", msg, "at", time.monotonic())
-
-            cur_state = btn.value # Get if button is pushed
-            if not btn.value:
-                octaveAdjust = False
-                while (not btn.value):
-                    if position != enc.position:
-                        octaveOffset = (enc.position - position)
-                        octaveAdjust = True
-
-                if not octaveAdjust:
-                    enc.position = 0
-                else:
-                    enc.position = position
-
-
-            prev_state = cur_state
-
-        elif mode == "online":
+        else:
             if event.pressed:
-                kbd.press(getattr(Keycode, keys_online[event.key_number], None))
+                kbd.press(layout.keycodes(keyModes[mode][event.key_number])[0])
             elif not event.pressed:
-                kbd.release(getattr(Keycode, keys_online[event.key_number], None))
-        elif mode == "game":
-            if event.pressed:
-                kbd.press(getattr(Keycode, keys_game[event.key_number], None))
-            elif not event.pressed:
-                kbd.release(getattr(Keycode, keys_game[event.key_number], None))
+                kbd.release(layout.keycodes(keyModes[mode][event.key_number])[0])

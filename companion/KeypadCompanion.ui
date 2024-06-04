@@ -677,7 +677,7 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>400</x>
+     <x>410</x>
      <y>2</y>
      <width>100</width>
      <height>36</height>
@@ -705,7 +705,7 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>400</x>
+     <x>410</x>
      <y>2</y>
      <width>100</width>
      <height>36</height>
@@ -725,6 +725,23 @@
    </property>
    <property name="text">
     <string>No device found!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deviceRefresh">
+   <property name="geometry">
+    <rect>
+     <x>375</x>
+     <y>10</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="companion_assets.qrc">
+     <normaloff>:/icons/assets/view-refresh.svg</normaloff>:/icons/assets/view-refresh.svg</iconset>
    </property>
   </widget>
  </widget>
