@@ -5,6 +5,7 @@
     <file>assets/skyMusic_square.svg</file>
   </qresource>
   <qresource prefix="logo">
+    <file>assets/SkyMusicLogo.svg</file>
     <file>assets/SkyLogo.svg</file>
   </qresource>
 </RCC>

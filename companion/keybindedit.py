@@ -11,7 +11,7 @@ class keybindEdit(QtWidgets.QLineEdit):
         self.setText(self.text().upper())
         if self.text() == "":
             return
-        self.focusNextPrevChild(True)        
+        self.focusNextPrevChild(True)
     
     def focusInEvent(self, e):
         super().focusInEvent(e)  # Call the base class implementation

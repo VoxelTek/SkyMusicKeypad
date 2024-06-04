@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Sky Keypad Companion</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="companion_assets.qrc">
+    <normaloff>:/logo/assets/SkyMusicLogo.svg</normaloff>:/logo/assets/SkyMusicLogo.svg</iconset>
+  </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
@@ -33,11 +37,14 @@
    </property>
   </widget>
   <widget class="QComboBox" name="keypadMode">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>290</x>
+     <x>250</x>
      <y>50</y>
-     <width>100</width>
+     <width>125</width>
      <height>21</height>
     </rect>
    </property>
@@ -45,7 +52,7 @@
   <widget class="QLabel" name="label_mapMode">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>110</x>
      <y>42</y>
      <width>141</width>
      <height>36</height>
@@ -58,7 +65,7 @@
   <widget class="QLabel" name="label_device">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>200</x>
      <y>2</y>
      <width>51</width>
      <height>36</height>
@@ -71,9 +78,9 @@
   <widget class="QComboBox" name="device">
    <property name="geometry">
     <rect>
-     <x>290</x>
+     <x>250</x>
      <y>10</y>
-     <width>100</width>
+     <width>125</width>
      <height>21</height>
     </rect>
    </property>
@@ -666,7 +673,7 @@
   </widget>
   <widget class="QLabel" name="validLabel">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -690,6 +697,34 @@
    </property>
    <property name="text">
     <string>Invalid Device!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="noDevice">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>2</y>
+     <width>100</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string>No device found!</string>
    </property>
   </widget>
  </widget>

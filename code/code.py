@@ -1,4 +1,5 @@
 import usb_cdc
+import supervisor
 
 import storage
 import json
@@ -84,23 +85,36 @@ elif mode == "online" or mode == "game":
     kbd = Keyboard(usb_hid.devices)
     print("keyboard mode")
 
+
+def writeConfig():
+    with open('config.json') as f:
+        json.dump(config, f)
+    supervisor.reload()
+
+
+def sendjson(stream):
+    serial.write((json.dumps(stream) + '\n').encode('utf-8'))
+
+
 def decodeData(data):
     data = json.loads(data)
 
     if data['type'] == 'ping':
         pingResponse = {"type": "pong"}
-        serial.write((json.dumps(pingResponse) + '\n').encode('utf-8'))
+        sendjson(pingResponse)
+    elif data['type'] == 'getcfg':
+        configResponse = {"type": "config", "cfgdata": config}
+        sendjson(configResponse)
+    elif data['type'] == 'setcfg':
+        config = data["cfgdata"]
+        writeConfig()
 
 
 def checkSerial():
     if serial.in_waiting > 0:
         print(serial.in_waiting)
         data = serial.readline()
-        print(data)
-        print(type(data))
         data = data.decode('utf-8').strip()
-        print(data)
-        print(type(data))
         decodeData(data)
 
 
