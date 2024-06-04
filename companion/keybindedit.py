@@ -1,5 +1,4 @@
 from PyQt6 import QtWidgets
-from PySide6 import QtCore
 
 
 class keybindEdit(QtWidgets.QLineEdit):

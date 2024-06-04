@@ -1,6 +1,6 @@
 import sys
 import webbrowser
-import companion_assets_rc
+
 from PyQt6 import QtWidgets, uic
 
 import keybindedit
@@ -9,6 +9,9 @@ import json
 
 import serial
 from serial.tools import list_ports
+
+import companion_assets_rc
+import KeypadCompanion_ui
 
 Ui_MainWindow1, QtBaseClass1 = uic.loadUiType("KeypadCompanion.ui")
 
@@ -44,11 +47,11 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
         self.fileDialog.setNameFilter("SkyMusic Keypad Settings (*.smk);;Generic Configuration File (*.json)")
     
     def accept(self):
-        print("accept")
+        #print("accept")
         self.pushSettings()
         self.close()
     def reject(self):
-        print("reject")
+        #print("reject")
         self.close()
 
     def help(self):
@@ -56,7 +59,7 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
 
     def save(self):
         filename = self.fileDialog.getSaveFileName(self, "Save File", "", "SkyMusic Keypad Settings (*.smk);;Generic Configuration File (*.json)")
-        print(filename[0])
+        #print(filename[0])
         out_file = open(filename[0], "w") 
         json.dump(self.config, out_file, indent = 4)
         out_file.close()
@@ -77,6 +80,8 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
             self.loadConfig()
 
     def pushSettings(self):
+        if self.config == {} or self.device.currentIndex() == -1:
+            return
         request = {"type":"setcfg", "cfgdata": self.config}
         request_string = (json.dumps(request) + '\n').encode('utf-8')
         self.ser.write(request_string)
@@ -88,7 +93,7 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
                 for keyCount in range(len(self.config["modes"][self.keypadMode.currentText()]) + 1):
                     if not(keyCount == 0):
                         self.config["modes"][self.keypadMode.currentText()][keyCount - 1] = self.findChild(keybindedit.keybindEdit, f"lineEdit_{keyCount:02}").text() 
-                print(self.config["modes"][self.keypadMode.currentText()])
+                #print(self.config["modes"][self.keypadMode.currentText()])
 
     def createNewProfile(self):
         text, ok = QtWidgets.QInputDialog().getText(self, "Create New Profile","Enter Profile Name:")
@@ -115,8 +120,8 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
             return
         
         self.config["mode"] = self.keypadMode.currentText()
-        print(self.config["mode"])
-        print(self.keypadMode.currentText())
+        #print(self.config["mode"])
+        #print(self.keypadMode.currentText())
 
         for keyCount in range(len(self.findChildren(keybindedit.keybindEdit)) + 1):
             if not(keyCount == 0):
@@ -135,7 +140,7 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
                 keybind_edit.setText(self.config["modes"][self.keypadMode.currentText()][keyCount - 1])
                 keybind_edit.textChanged.connect(self.keymapsToConfig)
                 #print(self.findChild(keybindedit.keybindEdit, f"lineEdit_{keyCount:02}").text())
-        print(self.config)
+        #print(self.config)
 
     def loadModes(self):
         try:
@@ -161,7 +166,7 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
         response = json.loads(response)
 
         self.config = response["cfgdata"]
-        print(self.config)
+        #print(self.config)
 
         self.loadModes()
 
@@ -175,20 +180,20 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
 
         response = self.ser.readline().decode('utf-8').strip()
 
-        print(response)
+        #print(response)
 
         try:
             response = json.loads(response)
-        except:
-            print("Device is not valid")
+        except json.decoder.JSONDecodeError:
+            #print("Device is not valid")
             self.validLabel.show()
             return
         
         if response["type"] == "pong":
-            print("Device is valid")
+            #print("Device is valid")
             self.validLabel.hide()
         else:
-            print("Device is not valid")
+            #print("Device is not valid")
             self.validLabel.show()
             return
         self.loadConfig()
@@ -205,9 +210,8 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
             self.device.setEnabled(False)
             return
         for p in port:
-            print(p.device)
+            #print(p.device)
             self.device.addItem(p.device)
- 
 
 
 
@@ -216,4 +220,4 @@ if __name__ == "__main__":
     window = KeypadCompanion()
     window.show()
 
-    sys.exit(app.exec()) 
+    sys.exit(app.exec())
