@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>600</width>
+    <height>400</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,9 +20,9 @@
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>550</y>
-     <width>771</width>
+     <x>15</x>
+     <y>350</y>
+     <width>571</width>
      <height>41</height>
     </rect>
    </property>
@@ -42,8 +42,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>565</x>
-     <y>30</y>
+     <x>250</x>
+     <y>50</y>
      <width>125</width>
      <height>21</height>
     </rect>
@@ -52,8 +52,8 @@
   <widget class="QLabel" name="label_mapMode">
    <property name="geometry">
     <rect>
-     <x>425</x>
-     <y>22</y>
+     <x>110</x>
+     <y>42</y>
      <width>141</width>
      <height>36</height>
     </rect>
@@ -65,8 +65,8 @@
   <widget class="QLabel" name="label_device">
    <property name="geometry">
     <rect>
-     <x>105</x>
-     <y>22</y>
+     <x>200</x>
+     <y>2</y>
      <width>51</width>
      <height>36</height>
     </rect>
@@ -78,8 +78,8 @@
   <widget class="QComboBox" name="device">
    <property name="geometry">
     <rect>
-     <x>155</x>
-     <y>30</y>
+     <x>250</x>
+     <y>10</y>
      <width>125</width>
      <height>21</height>
     </rect>
@@ -88,10 +88,10 @@
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>200</y>
-     <width>531</width>
-     <height>331</height>
+     <x>50</x>
+     <y>110</y>
+     <width>491</width>
+     <height>231</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -659,7 +659,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>0</y>
+     <y>5</y>
      <width>121</width>
      <height>111</height>
     </rect>
@@ -677,8 +677,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>315</x>
-     <y>22</y>
+     <x>410</x>
+     <y>2</y>
      <width>100</width>
      <height>36</height>
     </rect>
@@ -705,8 +705,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>315</x>
-     <y>22</y>
+     <x>410</x>
+     <y>2</y>
      <width>100</width>
      <height>36</height>
     </rect>
@@ -730,8 +730,8 @@
   <widget class="QPushButton" name="deviceRefresh">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>30</y>
+     <x>375</x>
+     <y>10</y>
      <width>21</width>
      <height>21</height>
     </rect>
@@ -742,162 +742,6 @@
    <property name="icon">
     <iconset resource="companion_assets.qrc">
      <normaloff>:/icons/assets/view-refresh.svg</normaloff>:/icons/assets/view-refresh.svg</iconset>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="rotMIDI">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>100</y>
-     <width>125</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="rotFuncMIDIlabel">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>92</y>
-     <width>131</width>
-     <height>36</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>MIDI Rotary encoder:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="rotFuncMIDIlabel_held">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>122</y>
-     <width>161</width>
-     <height>36</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>MIDI Rotary encoder (held):</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="rotMIDI_held">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>130</y>
-     <width>125</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="rotFuncMIDIlabel_button">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>152</y>
-     <width>121</width>
-     <height>36</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>MIDI button action:</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="rotMIDI_sw">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>160</y>
-     <width>125</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="rotFunKeylabel_button">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>152</y>
-     <width>141</width>
-     <height>36</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Keyboard button action:</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="rotKey_held">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>130</y>
-     <width>125</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="rotFunKeylabel">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>92</y>
-     <width>151</width>
-     <height>36</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Keyboard Rotary encoder:</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="rotKey_sw">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>160</y>
-     <width>125</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="rotKey">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>100</y>
-     <width>125</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="rotFunKeylabel_held">
-   <property name="geometry">
-    <rect>
-     <x>370</x>
-     <y>122</y>
-     <width>191</width>
-     <height>36</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Keyboard Rotary encoder (held):</string>
    </property>
   </widget>
  </widget>
