@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'KeypadCompanion.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.7.1
+## Created by: Qt User Interface Compiler version 6.7.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -36,32 +36,20 @@ class Ui_Dialog(object):
         self.buttonBox.setOrientation(Qt.Orientation.Horizontal)
         self.buttonBox.setStandardButtons(QDialogButtonBox.StandardButton.Cancel|QDialogButtonBox.StandardButton.Discard|QDialogButtonBox.StandardButton.Help|QDialogButtonBox.StandardButton.Ok|QDialogButtonBox.StandardButton.Open|QDialogButtonBox.StandardButton.Save)
         self.buttonBox.setCenterButtons(False)
-        self.keypadMode = QComboBox(Dialog)
-        self.keypadMode.setObjectName(u"keypadMode")
-        self.keypadMode.setEnabled(False)
-        self.keypadMode.setGeometry(QRect(250, 50, 125, 21))
-        self.label_mapMode = QLabel(Dialog)
-        self.label_mapMode.setObjectName(u"label_mapMode")
-        self.label_mapMode.setGeometry(QRect(110, 42, 141, 36))
-        self.label_device = QLabel(Dialog)
-        self.label_device.setObjectName(u"label_device")
-        self.label_device.setGeometry(QRect(200, 2, 51, 36))
-        self.device = QComboBox(Dialog)
-        self.device.setObjectName(u"device")
-        self.device.setGeometry(QRect(250, 10, 125, 21))
         self.gridLayoutWidget = QWidget(Dialog)
         self.gridLayoutWidget.setObjectName(u"gridLayoutWidget")
-        self.gridLayoutWidget.setGeometry(QRect(50, 110, 491, 231))
+        self.gridLayoutWidget.setGeometry(QRect(100, 110, 391, 231))
         self.gridLayout = QGridLayout(self.gridLayoutWidget)
         self.gridLayout.setObjectName(u"gridLayout")
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.lineEdit_05 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_05.setObjectName(u"lineEdit_05")
-        sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.MinimumExpanding, QSizePolicy.Policy.MinimumExpanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.lineEdit_05.sizePolicy().hasHeightForWidth())
         self.lineEdit_05.setSizePolicy(sizePolicy)
+        self.lineEdit_05.setMinimumSize(QSize(72, 72))
         font = QFont()
         font.setPointSize(15)
         self.lineEdit_05.setFont(font)
@@ -73,12 +61,13 @@ class Ui_Dialog(object):
         self.lineEdit_05.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_05.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_05, 0, 9, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_05, 0, 9, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_04 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_04.setObjectName(u"lineEdit_04")
         sizePolicy.setHeightForWidth(self.lineEdit_04.sizePolicy().hasHeightForWidth())
         self.lineEdit_04.setSizePolicy(sizePolicy)
+        self.lineEdit_04.setMinimumSize(QSize(72, 72))
         self.lineEdit_04.setFont(font)
         self.lineEdit_04.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_04.setAutoFillBackground(False)
@@ -89,12 +78,13 @@ class Ui_Dialog(object):
         self.lineEdit_04.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_04.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_04, 0, 8, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_04, 0, 8, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_01 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_01.setObjectName(u"lineEdit_01")
         sizePolicy.setHeightForWidth(self.lineEdit_01.sizePolicy().hasHeightForWidth())
         self.lineEdit_01.setSizePolicy(sizePolicy)
+        self.lineEdit_01.setMinimumSize(QSize(72, 72))
         self.lineEdit_01.setFont(font)
         self.lineEdit_01.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_01.setStyleSheet(u"image: url(:/keyIcons/assets/skyMusic_both.svg);")
@@ -104,12 +94,13 @@ class Ui_Dialog(object):
         self.lineEdit_01.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_01.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_01, 0, 5, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_01, 0, 5, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_09 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_09.setObjectName(u"lineEdit_09")
         sizePolicy.setHeightForWidth(self.lineEdit_09.sizePolicy().hasHeightForWidth())
         self.lineEdit_09.setSizePolicy(sizePolicy)
+        self.lineEdit_09.setMinimumSize(QSize(72, 72))
         self.lineEdit_09.setFont(font)
         self.lineEdit_09.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_09.setAutoFillBackground(False)
@@ -120,12 +111,13 @@ class Ui_Dialog(object):
         self.lineEdit_09.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_09.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_09, 1, 8, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_09, 1, 8, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_03 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_03.setObjectName(u"lineEdit_03")
         sizePolicy.setHeightForWidth(self.lineEdit_03.sizePolicy().hasHeightForWidth())
         self.lineEdit_03.setSizePolicy(sizePolicy)
+        self.lineEdit_03.setMinimumSize(QSize(72, 72))
         self.lineEdit_03.setFont(font)
         self.lineEdit_03.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_03.setStyleSheet(u"image: url(:/keyIcons/assets/skyMusic_circle.svg);")
@@ -135,12 +127,13 @@ class Ui_Dialog(object):
         self.lineEdit_03.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_03.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_03, 0, 7, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_03, 0, 7, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_10 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_10.setObjectName(u"lineEdit_10")
         sizePolicy.setHeightForWidth(self.lineEdit_10.sizePolicy().hasHeightForWidth())
         self.lineEdit_10.setSizePolicy(sizePolicy)
+        self.lineEdit_10.setMinimumSize(QSize(72, 72))
         self.lineEdit_10.setFont(font)
         self.lineEdit_10.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_10.setStyleSheet(u"image: url(:/keyIcons/assets/skyMusic_circle.svg);")
@@ -150,12 +143,13 @@ class Ui_Dialog(object):
         self.lineEdit_10.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_10.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_10, 1, 9, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_10, 1, 9, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_02 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_02.setObjectName(u"lineEdit_02")
         sizePolicy.setHeightForWidth(self.lineEdit_02.sizePolicy().hasHeightForWidth())
         self.lineEdit_02.setSizePolicy(sizePolicy)
+        self.lineEdit_02.setMinimumSize(QSize(72, 72))
         self.lineEdit_02.setFont(font)
         self.lineEdit_02.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_02.setAutoFillBackground(False)
@@ -166,12 +160,13 @@ class Ui_Dialog(object):
         self.lineEdit_02.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_02.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_02, 0, 6, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_02, 0, 6, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_06 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_06.setObjectName(u"lineEdit_06")
         sizePolicy.setHeightForWidth(self.lineEdit_06.sizePolicy().hasHeightForWidth())
         self.lineEdit_06.setSizePolicy(sizePolicy)
+        self.lineEdit_06.setMinimumSize(QSize(72, 72))
         self.lineEdit_06.setFont(font)
         self.lineEdit_06.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_06.setStyleSheet(u"image: url(:/keyIcons/assets/skyMusic_circle.svg);")
@@ -181,12 +176,13 @@ class Ui_Dialog(object):
         self.lineEdit_06.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_06.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_06, 1, 5, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_06, 1, 5, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_08 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_08.setObjectName(u"lineEdit_08")
         sizePolicy.setHeightForWidth(self.lineEdit_08.sizePolicy().hasHeightForWidth())
         self.lineEdit_08.setSizePolicy(sizePolicy)
+        self.lineEdit_08.setMinimumSize(QSize(72, 72))
         self.lineEdit_08.setFont(font)
         self.lineEdit_08.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_08.setStyleSheet(u"image: url(:/keyIcons/assets/skyMusic_both.svg);")
@@ -196,12 +192,13 @@ class Ui_Dialog(object):
         self.lineEdit_08.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_08.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_08, 1, 7, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_08, 1, 7, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_07 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_07.setObjectName(u"lineEdit_07")
         sizePolicy.setHeightForWidth(self.lineEdit_07.sizePolicy().hasHeightForWidth())
         self.lineEdit_07.setSizePolicy(sizePolicy)
+        self.lineEdit_07.setMinimumSize(QSize(72, 72))
         self.lineEdit_07.setFont(font)
         self.lineEdit_07.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_07.setAutoFillBackground(False)
@@ -212,12 +209,13 @@ class Ui_Dialog(object):
         self.lineEdit_07.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_07.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_07, 1, 6, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_07, 1, 6, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_11 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_11.setObjectName(u"lineEdit_11")
         sizePolicy.setHeightForWidth(self.lineEdit_11.sizePolicy().hasHeightForWidth())
         self.lineEdit_11.setSizePolicy(sizePolicy)
+        self.lineEdit_11.setMinimumSize(QSize(72, 72))
         self.lineEdit_11.setFont(font)
         self.lineEdit_11.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_11.setStyleSheet(u"image: url(:/keyIcons/assets/skyMusic_circle.svg);")
@@ -227,12 +225,13 @@ class Ui_Dialog(object):
         self.lineEdit_11.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_11.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_11, 2, 5, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_11, 2, 5, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_12 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_12.setObjectName(u"lineEdit_12")
         sizePolicy.setHeightForWidth(self.lineEdit_12.sizePolicy().hasHeightForWidth())
         self.lineEdit_12.setSizePolicy(sizePolicy)
+        self.lineEdit_12.setMinimumSize(QSize(72, 72))
         self.lineEdit_12.setFont(font)
         self.lineEdit_12.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_12.setAutoFillBackground(False)
@@ -243,12 +242,13 @@ class Ui_Dialog(object):
         self.lineEdit_12.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_12.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_12, 2, 6, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_12, 2, 6, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_13 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_13.setObjectName(u"lineEdit_13")
         sizePolicy.setHeightForWidth(self.lineEdit_13.sizePolicy().hasHeightForWidth())
         self.lineEdit_13.setSizePolicy(sizePolicy)
+        self.lineEdit_13.setMinimumSize(QSize(72, 72))
         self.lineEdit_13.setFont(font)
         self.lineEdit_13.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_13.setStyleSheet(u"image: url(:/keyIcons/assets/skyMusic_circle.svg);")
@@ -258,12 +258,13 @@ class Ui_Dialog(object):
         self.lineEdit_13.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_13.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_13, 2, 7, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_13, 2, 7, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_14 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_14.setObjectName(u"lineEdit_14")
         sizePolicy.setHeightForWidth(self.lineEdit_14.sizePolicy().hasHeightForWidth())
         self.lineEdit_14.setSizePolicy(sizePolicy)
+        self.lineEdit_14.setMinimumSize(QSize(72, 72))
         self.lineEdit_14.setFont(font)
         self.lineEdit_14.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_14.setAutoFillBackground(False)
@@ -274,12 +275,13 @@ class Ui_Dialog(object):
         self.lineEdit_14.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_14.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_14, 2, 8, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_14, 2, 8, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_15 = keybindEdit(self.gridLayoutWidget)
         self.lineEdit_15.setObjectName(u"lineEdit_15")
         sizePolicy.setHeightForWidth(self.lineEdit_15.sizePolicy().hasHeightForWidth())
         self.lineEdit_15.setSizePolicy(sizePolicy)
+        self.lineEdit_15.setMinimumSize(QSize(72, 72))
         self.lineEdit_15.setFont(font)
         self.lineEdit_15.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lineEdit_15.setStyleSheet(u"image: url(:/keyIcons/assets/skyMusic_both.svg);")
@@ -289,34 +291,60 @@ class Ui_Dialog(object):
         self.lineEdit_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lineEdit_15.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
 
-        self.gridLayout.addWidget(self.lineEdit_15, 2, 9, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_15, 2, 9, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.skyLogo = QLabel(Dialog)
         self.skyLogo.setObjectName(u"skyLogo")
-        self.skyLogo.setGeometry(QRect(0, 5, 121, 111))
+        self.skyLogo.setGeometry(QRect(0, 5, 91, 81))
         self.skyLogo.setStyleSheet(u"image: url(:/logo/assets/SkyLogo.svg);")
-        self.validLabel = QLabel(Dialog)
+        self.layoutWidget = QWidget(Dialog)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(130, 20, 389, 58))
+        self.gridLayout_2 = QGridLayout(self.layoutWidget)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.deviceRefresh = QPushButton(self.layoutWidget)
+        self.deviceRefresh.setObjectName(u"deviceRefresh")
+        self.deviceRefresh.setMinimumSize(QSize(24, 24))
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/assets/view-refresh.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.deviceRefresh.setIcon(icon1)
+
+        self.gridLayout_2.addWidget(self.deviceRefresh, 0, 2, 1, 1, Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
+
+        self.label_mapMode = QLabel(self.layoutWidget)
+        self.label_mapMode.setObjectName(u"label_mapMode")
+
+        self.gridLayout_2.addWidget(self.label_mapMode, 1, 0, 1, 1, Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignVCenter)
+
+        self.device = QComboBox(self.layoutWidget)
+        self.device.setObjectName(u"device")
+        self.device.setMinimumSize(QSize(125, 0))
+
+        self.gridLayout_2.addWidget(self.device, 0, 1, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+
+        self.keypadMode = QComboBox(self.layoutWidget)
+        self.keypadMode.setObjectName(u"keypadMode")
+        self.keypadMode.setEnabled(False)
+        self.keypadMode.setMinimumSize(QSize(125, 0))
+
+        self.gridLayout_2.addWidget(self.keypadMode, 1, 1, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+
+        self.label_device = QLabel(self.layoutWidget)
+        self.label_device.setObjectName(u"label_device")
+
+        self.gridLayout_2.addWidget(self.label_device, 0, 0, 1, 1, Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignVCenter)
+
+        self.validLabel = QLabel(self.layoutWidget)
         self.validLabel.setObjectName(u"validLabel")
         self.validLabel.setEnabled(True)
-        self.validLabel.setGeometry(QRect(410, 2, 100, 36))
         self.validLabel.setCursor(QCursor(Qt.ArrowCursor))
         self.validLabel.setAutoFillBackground(False)
         self.validLabel.setStyleSheet(u"color: rgb(255, 0, 0);")
         self.validLabel.setLineWidth(1)
-        self.noDevice = QLabel(Dialog)
-        self.noDevice.setObjectName(u"noDevice")
-        self.noDevice.setEnabled(True)
-        self.noDevice.setGeometry(QRect(410, 2, 100, 36))
-        self.noDevice.setCursor(QCursor(Qt.ArrowCursor))
-        self.noDevice.setAutoFillBackground(False)
-        self.noDevice.setStyleSheet(u"color: rgb(255, 0, 0);")
-        self.noDevice.setLineWidth(1)
-        self.deviceRefresh = QPushButton(Dialog)
-        self.deviceRefresh.setObjectName(u"deviceRefresh")
-        self.deviceRefresh.setGeometry(QRect(375, 10, 21, 21))
-        icon1 = QIcon()
-        icon1.addFile(u":/icons/assets/view-refresh.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.deviceRefresh.setIcon(icon1)
+
+        self.gridLayout_2.addWidget(self.validLabel, 0, 3, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+
         QWidget.setTabOrder(self.device, self.keypadMode)
         QWidget.setTabOrder(self.keypadMode, self.lineEdit_01)
         QWidget.setTabOrder(self.lineEdit_01, self.lineEdit_02)
@@ -341,11 +369,10 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"Sky Keypad Companion", None))
+        self.skyLogo.setText("")
+        self.deviceRefresh.setText("")
         self.label_mapMode.setText(QCoreApplication.translate("Dialog", u"Keypad Mapping Mode:", None))
         self.label_device.setText(QCoreApplication.translate("Dialog", u"Device:", None))
-        self.skyLogo.setText("")
         self.validLabel.setText(QCoreApplication.translate("Dialog", u"Invalid Device!", None))
-        self.noDevice.setText(QCoreApplication.translate("Dialog", u"No device found!", None))
-        self.deviceRefresh.setText("")
     # retranslateUi
 

@@ -1,7 +1,7 @@
 import sys
 import webbrowser
 
-from PySide6 import QtWidgets
+from PySide6 import QtWidgets, QtCore
 
 import keybindedit
 
@@ -12,10 +12,17 @@ from serial.tools import list_ports
 
 import companion_assets_rc
 import KeypadCompanion_ui
+import Companion_Advanced_ui
 
 app = QtWidgets.QApplication(sys.argv)
 
 #Ui_MainWindow1, QtBaseClass1 = uic.loadUiType("KeypadCompanion.ui")
+
+class AdvancedCompanion(QtWidgets.QDockWidget, Companion_Advanced_ui.Ui_DockWidget):
+    def __init__(self):
+        QtWidgets.QDockWidget.__init__(self)
+        Companion_Advanced_ui.Ui_DockWidget.__init__(self)
+
 
 class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
     def __init__(self):
@@ -27,7 +34,7 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
 
         self.config = {}
 
-        self.setFixedSize(800, 600)
+        self.setFixedSize(600, 400)
 
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Ok).clicked.connect(self.accept)
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Cancel).clicked.connect(self.reject)
@@ -38,8 +45,9 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
 
         self.deviceRefresh.clicked.connect(self.get_ports)
 
+        self.validText = self.validLabel.text()
+        self.noDeviceText = "No device connected"
         self.validLabel.hide()
-        self.noDevice.show()
         self.keypadMode.enabled = False
 
         self.get_ports()
@@ -47,6 +55,11 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
         self.fileDialog = QtWidgets.QFileDialog()
         self.fileDialog.setFileMode(QtWidgets.QFileDialog.FileMode.AnyFile)
         self.fileDialog.setNameFilter("SkyMusic Keypad Settings (*.smk);;Generic Configuration File (*.json)")
+
+
+        advancedWindow = AdvancedCompanion()
+
+        self.addDockWidget(QtCore.Qt.DockWidgetArea.RightDockWidgetArea, advancedWindow)
     
     def accept(self):
         #print("accept")
@@ -221,14 +234,17 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
             response = json.loads(response)
         except json.decoder.JSONDecodeError:
             #print("Device is not valid")
+            self.validLabel.setText(self.validText)
             self.validLabel.show()
             return
         
         if response["type"] == "pong":
             #print("Device is valid")
+            self.validLabel.setText(self.validText)
             self.validLabel.hide()
         else:
             #print("Device is not valid")
+            self.validLabel.setText(self.validText)
             self.validLabel.show()
             return
         self.loadConfig()
@@ -243,9 +259,10 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
         self.device.clear()
         port = list(list_ports.comports())
         if port != []:
-            self.noDevice.hide()
+            self.validLabel.hide()
         else:
-            self.noDevice.show()
+            self.validLabel.setText(self.noDeviceText)
+            self.validLabel.show()
             self.device.setEnabled(False)
             return
         for p in port:
@@ -258,7 +275,8 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
 
 if __name__ == "__main__":
     
-    window = KeypadCompanion()
-    window.show()
+    mainwindow = KeypadCompanion()
+    mainwindow.show()
+
 
     sys.exit(app.exec())
