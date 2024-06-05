@@ -7,10 +7,11 @@ class keybindEdit(QtWidgets.QLineEdit):
         self.textEdited.connect(self.keybindChanged)
     
     def keybindChanged(self):
-        self.setText(self.text().upper())
-        if self.text() == "":
-            return
-        self.focusNextPrevChild(True)
+        if not(self.maxLength() > 1):
+            self.setText(self.text().upper())
+            if self.text() == "":
+                return
+            self.focusNextPrevChild(True)
     
     def focusInEvent(self, e):
         super().focusInEvent(e)  # Call the base class implementation
