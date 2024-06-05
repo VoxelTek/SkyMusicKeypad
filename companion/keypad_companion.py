@@ -1,7 +1,7 @@
 import sys
 import webbrowser
 
-from PyQt6 import QtWidgets, uic
+from PySide6 import QtWidgets
 
 import keybindedit
 
@@ -15,19 +15,19 @@ import KeypadCompanion_ui
 
 app = QtWidgets.QApplication(sys.argv)
 
-Ui_MainWindow1, QtBaseClass1 = uic.loadUiType("KeypadCompanion.ui")
+#Ui_MainWindow1, QtBaseClass1 = uic.loadUiType("KeypadCompanion.ui")
 
-class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
+class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
     def __init__(self):
         QtWidgets.QMainWindow.__init__(self)
-        Ui_MainWindow1.__init__(self)
+        KeypadCompanion_ui.Ui_Dialog.__init__(self)
         self.setupUi(self)
 
         self.ser = serial.Serial()
 
         self.config = {}
 
-        self.setFixedSize(600, 400)
+        self.setFixedSize(800, 600)
 
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Ok).clicked.connect(self.accept)
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Cancel).clicked.connect(self.reject)
@@ -115,6 +115,24 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
             self.loadModes()
             return
         
+    def loadMIDI(self):
+        for keyCount in range(len(self.findChildren(keybindedit.keybindEdit)) + 1):
+            if not(keyCount == 0):
+                keybind_edit = self.findChild(keybindedit.keybindEdit, f"lineEdit_{keyCount:02}")
+
+                try:
+                    keybind_edit.textChanged.disconnect(self.keymapsToConfig)
+                except:
+                    pass
+
+                keybind_edit.setMaxLength(3)
+                keybind_edit.setInputMask("xx0")
+
+                print(self.config["midi"][keyCount - 1])
+
+                keybind_edit.setText(str(self.config["midi"][keyCount - 1]))
+                keybind_edit.textChanged.connect(self.keymapsToConfig)
+
 
     def loadKeymaps(self):
         #print(self.findChild(keybindedit.keybindEdit, "lineEdit_01"))
@@ -123,7 +141,14 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
             self.createNewProfile()
             return
         
+        
+        
         self.config["mode"] = self.keypadMode.currentText()
+
+        if self.keypadMode.currentText() == "midi":
+            self.loadMIDI()
+            return
+
         #print(self.config["mode"])
         #print(self.keypadMode.currentText())
 
@@ -136,6 +161,9 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
                 except:
                     pass
                 #print(f"lineEdit_{keyCount:02}")
+
+                keybind_edit.setMaxLength(1)
+                keybind_edit.setInputMask("x")
                 
                 try:
                     self.config["modes"][self.keypadMode.currentText()][keyCount - 1]
@@ -148,12 +176,14 @@ class KeypadCompanion(QtWidgets.QMainWindow, Ui_MainWindow1):
 
     def loadModes(self):
         try:
-            self.keypadMode.currentIndexChanged.disconnect()
+            self.keypadMode.currentIndexChanged.disconnect(self.loadKeymaps)
         except:
             pass
         self.keypadMode.clear()
         self.keypadMode.setEnabled(True)
         #print(self.config["modes"])
+
+        self.keypadMode.addItem("midi")
 
         for key in self.config["modes"].keys():
             self.keypadMode.addItem(key)
