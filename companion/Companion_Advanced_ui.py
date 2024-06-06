@@ -17,17 +17,19 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QComboBox, QDockWidget, QGridLayout,
     QLabel, QLayout, QSizePolicy, QSpacerItem,
-    QVBoxLayout, QWidget)
+    QWidget)
 
 class Ui_DockWidget(object):
     def setupUi(self, DockWidget):
         if not DockWidget.objectName():
             DockWidget.setObjectName(u"DockWidget")
-        DockWidget.resize(354, 189)
+        DockWidget.resize(300, 400)
+        DockWidget.setMaximumSize(QSize(300, 400))
+        DockWidget.setAllowedAreas(Qt.DockWidgetArea.RightDockWidgetArea)
         self.dockWidgetContents = QWidget()
         self.dockWidgetContents.setObjectName(u"dockWidgetContents")
-        self.verticalLayout = QVBoxLayout(self.dockWidgetContents)
-        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.gridLayout = QGridLayout(self.dockWidgetContents)
+        self.gridLayout.setObjectName(u"gridLayout")
         self.rotaryOptionGrid = QGridLayout()
         self.rotaryOptionGrid.setObjectName(u"rotaryOptionGrid")
         self.rotaryOptionGrid.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
@@ -80,7 +82,7 @@ class Ui_DockWidget(object):
         self.rotaryOptionGrid.addItem(self.verticalSpacer_2, 2, 1, 1, 1)
 
 
-        self.verticalLayout.addLayout(self.rotaryOptionGrid)
+        self.gridLayout.addLayout(self.rotaryOptionGrid, 0, 0, 1, 1)
 
         DockWidget.setWidget(self.dockWidgetContents)
 

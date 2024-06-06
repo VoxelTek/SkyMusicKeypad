@@ -27,6 +27,8 @@ class Ui_Dialog(object):
         if not Dialog.objectName():
             Dialog.setObjectName(u"Dialog")
         Dialog.resize(600, 400)
+        Dialog.setBaseSize(QSize(600, 400))
+        Dialog.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         icon = QIcon()
         icon.addFile(u":/logo/assets/SkyMusicLogo.svg", QSize(), QIcon.Normal, QIcon.Off)
         Dialog.setWindowIcon(icon)
@@ -34,7 +36,7 @@ class Ui_Dialog(object):
         self.buttonBox.setObjectName(u"buttonBox")
         self.buttonBox.setGeometry(QRect(15, 350, 571, 41))
         self.buttonBox.setOrientation(Qt.Orientation.Horizontal)
-        self.buttonBox.setStandardButtons(QDialogButtonBox.StandardButton.Cancel|QDialogButtonBox.StandardButton.Discard|QDialogButtonBox.StandardButton.Help|QDialogButtonBox.StandardButton.Ok|QDialogButtonBox.StandardButton.Open|QDialogButtonBox.StandardButton.Save)
+        self.buttonBox.setStandardButtons(QDialogButtonBox.StandardButton.Cancel|QDialogButtonBox.StandardButton.Help|QDialogButtonBox.StandardButton.Ok|QDialogButtonBox.StandardButton.Open|QDialogButtonBox.StandardButton.Reset|QDialogButtonBox.StandardButton.Save)
         self.buttonBox.setCenterButtons(False)
         self.gridLayoutWidget = QWidget(Dialog)
         self.gridLayoutWidget.setObjectName(u"gridLayoutWidget")
@@ -305,7 +307,7 @@ class Ui_Dialog(object):
         self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
         self.deviceRefresh = QPushButton(self.layoutWidget)
         self.deviceRefresh.setObjectName(u"deviceRefresh")
-        self.deviceRefresh.setMinimumSize(QSize(24, 24))
+        self.deviceRefresh.setMinimumSize(QSize(25, 25))
         icon1 = QIcon()
         icon1.addFile(u":/icons/assets/view-refresh.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.deviceRefresh.setIcon(icon1)
@@ -342,8 +344,9 @@ class Ui_Dialog(object):
         self.validLabel.setAutoFillBackground(False)
         self.validLabel.setStyleSheet(u"color: rgb(255, 0, 0);")
         self.validLabel.setLineWidth(1)
+        self.validLabel.setTextFormat(Qt.TextFormat.PlainText)
 
-        self.gridLayout_2.addWidget(self.validLabel, 0, 3, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+        self.gridLayout_2.addWidget(self.validLabel, 0, 3, 1, 1, Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
 
         QWidget.setTabOrder(self.device, self.keypadMode)
         QWidget.setTabOrder(self.keypadMode, self.lineEdit_01)

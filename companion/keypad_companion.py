@@ -12,16 +12,16 @@ from serial.tools import list_ports
 
 import companion_assets_rc
 import KeypadCompanion_ui
-import Companion_Advanced_ui
+#import Companion_Advanced_ui
 
 app = QtWidgets.QApplication(sys.argv)
 
 #Ui_MainWindow1, QtBaseClass1 = uic.loadUiType("KeypadCompanion.ui")
 
-class AdvancedCompanion(QtWidgets.QDockWidget, Companion_Advanced_ui.Ui_DockWidget):
-    def __init__(self):
-        QtWidgets.QDockWidget.__init__(self)
-        Companion_Advanced_ui.Ui_DockWidget.__init__(self)
+#class AdvancedCompanion(QtWidgets.QDockWidget, Companion_Advanced_ui.Ui_DockWidget):
+#    def __init__(self):
+#        QtWidgets.QDockWidget.__init__(self)
+#        Companion_Advanced_ui.Ui_DockWidget.__init__(self)
 
 
 class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
@@ -41,12 +41,12 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
         self.buttonBox.helpRequested.connect(self.help)
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Save).clicked.connect(self.save)
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Open).clicked.connect(self.open)
-        self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Discard).clicked.connect(self.discard)
+        self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Reset).clicked.connect(self.discard)
 
         self.deviceRefresh.clicked.connect(self.get_ports)
 
         self.validText = self.validLabel.text()
-        self.noDeviceText = "No device connected"
+        self.noDeviceText = "No device!"
         self.validLabel.hide()
         self.keypadMode.enabled = False
 
@@ -56,11 +56,27 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
         self.fileDialog.setFileMode(QtWidgets.QFileDialog.FileMode.AnyFile)
         self.fileDialog.setNameFilter("SkyMusic Keypad Settings (*.smk);;Generic Configuration File (*.json)")
 
-
-        advancedWindow = AdvancedCompanion()
-
-        self.addDockWidget(QtCore.Qt.DockWidgetArea.RightDockWidgetArea, advancedWindow)
+        #self.advancedButton.clicked.connect(self.advanced)
     
+
+    #def advanced(self):
+    #    self.advancedWindow = AdvancedCompanion()
+
+        #self.setFixedSize(900, 400)
+
+        #self.addDockWidget(QtCore.Qt.DockWidgetArea.RightDockWidgetArea, self.advancedWindow)
+        #self.advancedWindow.dockLocationChanged.connect(self.moveAdvanced)
+        #self.advancedWindow.setupUi(self.advancedWindow)
+        #self.advancedWindow.show()
+            
+
+
+    #def moveAdvanced(self):
+    #    if self.advancedWindow.isFloating():
+    #        self.setFixedSize(900, 400)
+    #    else:
+    #        self.setFixedSize(900, 400)
+        
     def accept(self):
         #print("accept")
         self.pushSettings()
