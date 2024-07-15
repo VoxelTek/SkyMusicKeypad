@@ -812,6 +812,69 @@
     </item>
    </layout>
   </widget>
+  <widget class="QPushButton" name="extraSettings">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>25</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>⛭</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendData">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>180</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Send -&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="getData">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>240</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;- Receive</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="unsaved">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>160</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>Unsaved</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>

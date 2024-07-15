@@ -14,6 +14,8 @@ import companion_assets_rc
 import KeypadCompanion_ui
 #import Companion_Advanced_ui
 
+from midinum import midiNum
+
 app = QtWidgets.QApplication(sys.argv)
 
 #Ui_MainWindow1, QtBaseClass1 = uic.loadUiType("KeypadCompanion.ui")
@@ -33,22 +35,30 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
         self.ser = serial.Serial()
 
         self.config = {}
+        self.deviceConfig = {}
+
+        self.validDevice = False
 
         self.setFixedSize(600, 400)
 
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Ok).clicked.connect(self.accept)
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Cancel).clicked.connect(self.reject)
-        self.buttonBox.helpRequested.connect(self.help)
-        self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Save).clicked.connect(self.save)
-        self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Open).clicked.connect(self.open)
+
+        self.buttonBox.helpRequested.connect(self.help) # Help button leads to wiki page
+
+        self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Save).clicked.connect(self.saveFile)
+        self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Open).clicked.connect(self.openFile)
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Reset).clicked.connect(self.discard)
 
-        self.deviceRefresh.clicked.connect(self.get_ports)
+        self.deviceRefresh.clicked.connect(self.get_ports) # Refresh button checks ports
 
         self.validText = self.validLabel.text()
         self.noDeviceText = "No device!"
         self.validLabel.hide()
         self.keypadMode.enabled = False
+
+        self.unsaved.setDisabled(True)
+        self.unsaved.hide()
 
         self.get_ports()
 
@@ -90,14 +100,14 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
     def help(self):
         webbrowser.open("https://github.com/VoxelTek/SkyMusicKeypad/wiki", new=2)
 
-    def save(self):
+    def saveFile(self):
         filename = self.fileDialog.getSaveFileName(self, "Save File", "", "SkyMusic Keypad Settings (*.smk);;Generic Configuration File (*.json)")
         #print(filename[0])
         out_file = open(filename[0], "w") 
         json.dump(self.config, out_file, indent = 4)
         out_file.close()
     
-    def open(self):
+    def openFile(self):
         filename = self.fileDialog.getOpenFileName(self, "Open File", "", "SkyMusic Keypad Settings (*.smk);;Generic Configuration File (*.json)")
         configFile = open(filename[0], "r")
         self.config = json.load(configFile)
@@ -107,10 +117,7 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
 
 
     def discard(self):
-        self.config = {}
-
-        if self.device.currentIndex() != -1:
-            self.loadConfig()
+        self.loadConfig()
 
     def pushSettings(self):
         if self.config == {} or self.device.currentIndex() == -1:
@@ -118,15 +125,22 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
         request = {"type":"setcfg", "cfgdata": self.config}
         request_string = (json.dumps(request) + '\n').encode('utf-8')
         self.ser.write(request_string)
+        self.deviceConfig = self.config
     
     def keymapsToConfig(self):
         if self.config != {}:
-            #print("there is a config file")
             if (self.keypadMode.currentIndex() != -1) and (self.device.currentIndex() != -1):
                 for keyCount in range(len(self.config["modes"][self.keypadMode.currentText()]) + 1):
                     if not(keyCount == 0):
                         self.config["modes"][self.keypadMode.currentText()][keyCount - 1] = self.findChild(keybindedit.keybindEdit, f"lineEdit_{keyCount:02}").text() 
                 #print(self.config["modes"][self.keypadMode.currentText()])
+        
+        if self.config != self.deviceConfig:
+            self.unsaved.setEnabled(True)
+            self.unsaved.show()
+        else:
+            self.unsaved.setDisabled(True)
+            self.unsaved.hide()
 
     def createNewProfile(self):
         text, ok = QtWidgets.QInputDialog().getText(self, "Create New Profile","Enter Profile Name:")
@@ -151,11 +165,11 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
 
                 try:
                     keybind_edit.textChanged.disconnect(self.keymapsToConfig)
-                except:
+                except RuntimeError:
                     pass
 
                 keybind_edit.setMaxLength(3)
-                keybind_edit.setInputMask("xx0")
+                keybind_edit.setInputMask("000")
 
                 print(self.config["midi"][keyCount - 1])
 
@@ -187,7 +201,7 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
 
                 try:
                     keybind_edit.textChanged.disconnect(self.keymapsToConfig)
-                except:
+                except RuntimeError:
                     pass
                 #print(f"lineEdit_{keyCount:02}")
 
@@ -230,13 +244,22 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
         response = json.loads(response)
 
         self.config = response["cfgdata"]
-        #print(self.config)
+        self.deviceConfig = self.config
+
+        self.unsaved.setDisabled(True)
+        self.unsaved.hide()
 
         self.loadModes()
 
     def switchToSerial(self):
-        portNumber = self.device.currentIndex()
-        self.ser = serial.Serial(self.device.currentText(), 115200, timeout=0.1)
+        try:
+            self.ser = serial.Serial(self.device.currentText(), 115200, timeout=0.1)
+        except serial.SerialException:
+            serialFailed = QtWidgets.QMessageBox()
+            serialFailed.setText("Failed to access serial device! Maybe try running application as admin?")
+            x = serialFailed.exec()
+            return
+            
 
         testData = {"type":"ping"}
         
@@ -256,10 +279,12 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
         
         if response["type"] == "pong":
             #print("Device is valid")
+            self.validDevice = True
             self.validLabel.setText(self.validText)
             self.validLabel.hide()
         else:
             #print("Device is not valid")
+            self.validDevice = False
             self.validLabel.setText(self.validText)
             self.validLabel.show()
             return
@@ -269,21 +294,23 @@ class KeypadCompanion(QtWidgets.QMainWindow, KeypadCompanion_ui.Ui_Dialog):
     
     def get_ports(self):
         try:
-            self.device.currentIndexChanged.disconnect(self.switchToSerial)
-        except:
+            self.device.currentIndexChanged.disconnect(self.switchToSerial) # Disconnect button if not already disconnected
+        except RuntimeError:                                                # Otherwise, the function will trigger when it shouldn't
             pass
         self.device.clear()
         port = list(list_ports.comports())
-        if port != []:
-            self.validLabel.hide()
-        else:
+        if port == []:
             self.validLabel.setText(self.noDeviceText)
             self.validLabel.show()
             self.device.setEnabled(False)
             return
+        
+        self.device.setEnabled(True)
+        self.validLabel.hide()
+
         for p in port:
-            #print(p.device)
             self.device.addItem(p.device)
+        
         self.device.setCurrentIndex(-1)
         self.device.currentIndexChanged.connect(self.switchToSerial)
 

@@ -348,6 +348,23 @@ class Ui_Dialog(object):
 
         self.gridLayout_2.addWidget(self.validLabel, 0, 3, 1, 1, Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
 
+        self.extraSettings = QPushButton(Dialog)
+        self.extraSettings.setObjectName(u"extraSettings")
+        self.extraSettings.setGeometry(QRect(570, 25, 16, 16))
+        self.sendData = QPushButton(Dialog)
+        self.sendData.setObjectName(u"sendData")
+        self.sendData.setGeometry(QRect(510, 180, 80, 25))
+        self.getData = QPushButton(Dialog)
+        self.getData.setObjectName(u"getData")
+        self.getData.setGeometry(QRect(510, 240, 80, 25))
+        self.unsaved = QLabel(Dialog)
+        self.unsaved.setObjectName(u"unsaved")
+        self.unsaved.setEnabled(False)
+        self.unsaved.setGeometry(QRect(520, 160, 51, 20))
+        font1 = QFont()
+        font1.setItalic(True)
+        self.unsaved.setFont(font1)
+        self.unsaved.setAlignment(Qt.AlignmentFlag.AlignCenter)
         QWidget.setTabOrder(self.device, self.keypadMode)
         QWidget.setTabOrder(self.keypadMode, self.lineEdit_01)
         QWidget.setTabOrder(self.lineEdit_01, self.lineEdit_02)
@@ -377,5 +394,9 @@ class Ui_Dialog(object):
         self.label_mapMode.setText(QCoreApplication.translate("Dialog", u"Keypad Mapping Mode:", None))
         self.label_device.setText(QCoreApplication.translate("Dialog", u"Device:", None))
         self.validLabel.setText(QCoreApplication.translate("Dialog", u"Invalid Device!", None))
+        self.extraSettings.setText(QCoreApplication.translate("Dialog", u"\u26ed", None))
+        self.sendData.setText(QCoreApplication.translate("Dialog", u"Send ->", None))
+        self.getData.setText(QCoreApplication.translate("Dialog", u"<- Receive", None))
+        self.unsaved.setText(QCoreApplication.translate("Dialog", u"Unsaved", None))
     # retranslateUi
 
