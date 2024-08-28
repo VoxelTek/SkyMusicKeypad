@@ -3,45 +3,68 @@
  */
 #include "src/ESP32-BLE-Keyboard/BleKeyboard.h"
 
+#include "USB.h"
+#include "USBHIDKeyboard.h"
+USBHIDKeyboard usbKeyboard;
 BleKeyboard bleKeyboard;
+
+int mode = 0;
+/*
+Mode 0 = Keyboard, BT or USB
+Mode 1 = MIDI, BT or USB
+*/
+
+int keymap = 0;
+/*
+Keymap 0 = Sky Music (web)
+Keymap 1 = In-game playback
+*/
+
+bool forceUSB = true;
+bool forceBT = false;
+
+bool btConnected = true;
+const int btTimeoutLength = 5;
+int btTimeout = 5;
 
 void setup() {
   Serial.begin(115200);
-  Serial.println("Starting BLE work!");
-  bleKeyboard.begin();
+  Serial.println("Starting...");
+
+  if (!forceBT) {
+    usbKeyboard.begin();
+    USB.begin();
+  }
+  if (!forceUSB) {
+    bleKeyboard.begin();
+  }
 }
 
 void loop() {
-  Serial.println("Checking if connected...");
-  if(bleKeyboard.isConnected()) {
-    Serial.println("Sending 'Hello world'...");
-    bleKeyboard.print("Hello world");
-
-    delay(1000);
-
-    Serial.println("Sending Enter key...");
-    bleKeyboard.write(KEY_RETURN);
-
-    delay(1000);
-
-    Serial.println("Sending Play/Pause media key...");
-    bleKeyboard.write(KEY_MEDIA_PLAY_PAUSE);
-
-    delay(1000);
-
-   //
-   // Below is an example of pressing multiple keyboard modifiers 
-   // which by default is commented out.
-    /*
-    Serial.println("Sending Ctrl+Alt+Delete...");
-    bleKeyboard.press(KEY_LEFT_CTRL);
-    bleKeyboard.press(KEY_LEFT_ALT);
-    bleKeyboard.press(KEY_DELETE);
-    delay(100);
-    bleKeyboard.releaseAll();
-    */
+  if (forceUSB) {
+    usbMode();
+  }
+  else if (forceBT) {
+    btMode();
+  }
+  /*
+  else if (btConnected) {
+    if (btTimeout > 0) {
+      btTimeout -= 1;
+      return;
+    }
   }
 
   Serial.println("Waiting 5 seconds...");
   delay(5000);
+  */
+}
+
+
+void usbMode() {
+  
+}
+
+void btMode() {
+  
 }
