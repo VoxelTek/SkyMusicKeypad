@@ -1,0 +1,3 @@
+[submodule "board/ESP32-S3-Zero_KiCad"]
+	path = board/ESP32-S3-Zero_KiCad
+	url = https://github.com/VoxelTek/ESP32-S3-Zero_KiCad
