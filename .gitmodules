@@ -1,0 +1,6 @@
+[submodule "board/ESP32-S3-Zero_KiCad"]
+	path = board/ESP32-S3-Zero_KiCad
+	url = https://github.com/VoxelTek/ESP32-S3-Zero_KiCad.git
+[submodule "code/SkyKeypadPro/src/ESP32-BLE-Keyboard"]
+	path = code/SkyKeypadPro/src/ESP32-BLE-Keyboard
+	url = https://github.com/VoxelTek/ESP32-BLE-Keyboard.git
