@@ -6,15 +6,22 @@
 #include "USBVendor.h"
 #include "USB.h"
 #include "USBHIDKeyboard.h"
+#include "USBMIDI.h"
+#include "BLEMidi.h"
 
 #define rotA_pin 11
 #define rotB_pin 10
 #define rotSW_pin 44
 
+
 USBVendor usbVendor;
 
 USBHIDKeyboard usbKeyboard;
 BleKeyboard bleKeyboard;
+
+USBMIDI MIDI;
+
+#define MIDI_NOTE_C4 60
 
 const byte ROWS = 3;
 const byte COLS = 5;
@@ -24,8 +31,8 @@ const byte colPins[COLS] = {1, 2, 3, 4, 5};
 
 
 /*
-Mode 0 = Keyboard, BT or USB;
-Mode 1 = MIDI, BT or USB;
+Mode 0 = Keyboard;
+Mode 1 = MIDI;
 */
 int mode = 0;
 
@@ -64,14 +71,10 @@ void setup() {
 
 
   if (forceUSB) {         // Communicate over USB, no matter what
-    usbKeyboard.begin();
-    USB.begin();
-    interface = 1;
+    usbMode()
   }
   else if (forceBT) {     // Communicate over BT, no matter what
-    bleKeyboard.begin();
-    btEnabled = true;
-    interface = 2;
+    
   }
 }
 
@@ -79,6 +82,29 @@ void loop() {
   setMode();
 }
 
+
+void usbMode() {
+  if (mode == 0) {
+    usbKeyboard.begin();
+    USB.begin();
+  }
+  else if (mode == 1) {
+
+  }
+  btEnabled = false;
+  interface = 1;
+}
+
+void btMode() {
+  if (mode == 0) {
+    bleKeyboard.begin();
+  }
+  else if (mode == 1) {
+    BLEMidiServer.begin("Sky Music Keypad");
+  }
+  btEnabled = true;
+  interface = 2;
+}
 
 
 void setMode() {
