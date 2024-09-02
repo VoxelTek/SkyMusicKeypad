@@ -16,10 +16,10 @@
 
 USBVendor usbVendor;
 
-USBHIDKeyboard usbKeyboard;
-BleKeyboard bleKeyboard;
+static struct USBHIDKeyboard *usbKeyboard = NULL;
+static struct BleKeyboard *bleKeyboard = NULL;
 
-USBMIDI MIDI;
+static struct USBMIDI *MIDI = NULL;
 
 #define MIDI_NOTE_C4 60
 
@@ -71,11 +71,22 @@ void setup() {
 
 
   if (forceUSB) {         // Communicate over USB, no matter what
-    usbMode()
+    usbMode();
   }
   else if (forceBT) {     // Communicate over BT, no matter what
-    
+    btMode();
   }
+
+  if (mode == 0) {
+    static struct USBHIDKeyboard _usbKeyboard;
+    usbKeyboard = &_usbKeyboard;
+  }
+  else if (mode == 1) {
+    static struct USBMIDI _MIDI;
+    MIDI = &_MIDI;
+  }
+
+
 }
 
 void loop() {
@@ -113,8 +124,6 @@ void setMode() {
     if (usbStatus) {            // Is USB connected?
       if (interface != 1) {     // Have we already recorded that we're in USB mode?
         interface = 1;          // Set mode to USB
-        bleKeyboard.end();      // Disable Bluetooth while connected to USB
-        btEnabled = false;
       }
       return;
     }
