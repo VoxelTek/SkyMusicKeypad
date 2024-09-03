@@ -1420,7 +1420,7 @@
 				)
 			)
 		)
-		(symbol "LED:WS2812B-2020"
+		(symbol "LED:SK6812MINI"
 			(pin_names
 				(offset 0.254)
 			)
@@ -1436,7 +1436,7 @@
 					(justify right bottom)
 				)
 			)
-			(property "Value" "WS2812B-2020"
+			(property "Value" "SK6812MINI"
 				(at 1.27 -5.715 0)
 				(effects
 					(font
@@ -1445,7 +1445,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 				(at 1.27 -7.62 0)
 				(effects
 					(font
@@ -1455,7 +1455,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 				(at 2.54 -9.525 0)
 				(effects
 					(font
@@ -1465,7 +1465,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+			(property "Description" "RGB LED with integrated controller"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1474,7 +1474,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "RGB LED NeoPixel Nano addressable"
+			(property "ki_keywords" "RGB LED NeoPixel Mini addressable"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1483,7 +1483,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "LED*WS2812*-2020_PLCC4*"
+			(property "ki_fp_filters" "LED*SK6812MINI*PLCC*3.5x3.5mm*P1.75mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1492,7 +1492,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "WS2812B-2020_0_0"
+			(symbol "SK6812MINI_0_0"
 				(text "RGB"
 					(at 2.286 -4.191 0)
 					(effects
@@ -1502,7 +1502,7 @@
 					)
 				)
 			)
-			(symbol "WS2812B-2020_0_1"
+			(symbol "SK6812MINI_0_1"
 				(polyline
 					(pts
 						(xy 1.27 -3.556) (xy 1.778 -3.556)
@@ -1599,7 +1599,7 @@
 					)
 				)
 			)
-			(symbol "WS2812B-2020_1_1"
+			(symbol "SK6812MINI_1_1"
 				(pin output line
 					(at 7.62 0 180)
 					(length 2.54)
@@ -3975,7 +3975,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 191.77 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3985,22 +3985,22 @@
 		(fields_autoplaced yes)
 		(uuid "0186f88b-ccd0-451e-bad2-fe3d726b25dc")
 		(property "Reference" "D16"
-			(at 205.74 105.4414 0)
+			(at 204.47 105.4414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 205.74 107.9814 0)
+		(property "Value" "SK6812MINI"
+			(at 204.47 107.9814 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 193.04 119.38 0)
 			(effects
 				(font
@@ -4010,7 +4010,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 194.31 121.285 0)
 			(effects
 				(font
@@ -4020,7 +4020,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 191.77 111.76 0)
 			(effects
 				(font
@@ -4118,7 +4118,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 207.01 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4128,22 +4128,22 @@
 		(fields_autoplaced yes)
 		(uuid "06525c9b-9d36-483a-aa43-141220254ae4")
 		(property "Reference" "D27"
-			(at 220.98 147.3514 0)
+			(at 219.71 147.3514 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 220.98 149.8914 0)
+		(property "Value" "SK6812MINI"
+			(at 219.71 149.8914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 208.28 161.29 0)
 			(effects
 				(font
@@ -4153,7 +4153,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 209.55 163.195 0)
 			(effects
 				(font
@@ -4163,7 +4163,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 207.01 153.67 0)
 			(effects
 				(font
@@ -4698,7 +4698,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 222.25 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4708,22 +4708,22 @@
 		(fields_autoplaced yes)
 		(uuid "11f5740d-e284-4d13-b542-124cd17d7204")
 		(property "Reference" "D18"
-			(at 236.22 105.4414 0)
+			(at 234.95 105.4414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 236.22 107.9814 0)
+		(property "Value" "SK6812MINI"
+			(at 234.95 107.9814 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 223.52 119.38 0)
 			(effects
 				(font
@@ -4733,7 +4733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 224.79 121.285 0)
 			(effects
 				(font
@@ -4743,7 +4743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 222.25 111.76 0)
 			(effects
 				(font
@@ -4841,7 +4841,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 191.77 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4851,22 +4851,22 @@
 		(fields_autoplaced yes)
 		(uuid "17eff23d-a8ae-4da0-95c1-6eb8226d1225")
 		(property "Reference" "D26"
-			(at 205.74 147.3514 0)
+			(at 204.47 147.3514 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 205.74 149.8914 0)
+		(property "Value" "SK6812MINI"
+			(at 204.47 149.8914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 193.04 161.29 0)
 			(effects
 				(font
@@ -4876,7 +4876,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 194.31 163.195 0)
 			(effects
 				(font
@@ -4886,7 +4886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 191.77 153.67 0)
 			(effects
 				(font
@@ -4917,7 +4917,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 207.01 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4927,22 +4927,22 @@
 		(fields_autoplaced yes)
 		(uuid "183d567c-ca9d-454d-ac06-1d841bccbbad")
 		(property "Reference" "D22"
-			(at 220.98 127.0314 0)
+			(at 219.71 127.0314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 220.98 129.5714 0)
+		(property "Value" "SK6812MINI"
+			(at 219.71 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 208.28 140.97 0)
 			(effects
 				(font
@@ -4952,7 +4952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 209.55 142.875 0)
 			(effects
 				(font
@@ -4962,7 +4962,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 207.01 133.35 0)
 			(effects
 				(font
@@ -5532,7 +5532,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 252.73 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5542,22 +5542,22 @@
 		(fields_autoplaced yes)
 		(uuid "37b938d9-248d-43a8-9b7a-00b1f3763472")
 		(property "Reference" "D30"
-			(at 266.7 147.3514 0)
+			(at 265.43 147.3514 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 266.7 149.8914 0)
+		(property "Value" "SK6812MINI"
+			(at 265.43 149.8914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 254 161.29 0)
 			(effects
 				(font
@@ -5567,7 +5567,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 255.27 163.195 0)
 			(effects
 				(font
@@ -5577,7 +5577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 252.73 153.67 0)
 			(effects
 				(font
@@ -6094,7 +6094,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 237.49 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6104,22 +6104,22 @@
 		(fields_autoplaced yes)
 		(uuid "403b1a3f-8b52-40d3-b240-6676f9b7a8de")
 		(property "Reference" "D24"
-			(at 251.46 127.0314 0)
+			(at 250.19 127.0314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 251.46 129.5714 0)
+		(property "Value" "SK6812MINI"
+			(at 250.19 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 238.76 140.97 0)
 			(effects
 				(font
@@ -6129,7 +6129,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 240.03 142.875 0)
 			(effects
 				(font
@@ -6139,7 +6139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 237.49 133.35 0)
 			(effects
 				(font
@@ -6238,7 +6238,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 207.01 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6248,22 +6248,22 @@
 		(fields_autoplaced yes)
 		(uuid "49e3d45a-731a-4300-a9ac-ba63f3550f2a")
 		(property "Reference" "D17"
-			(at 220.98 105.4414 0)
+			(at 219.71 105.4414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 220.98 107.9814 0)
+		(property "Value" "SK6812MINI"
+			(at 219.71 107.9814 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 208.28 119.38 0)
 			(effects
 				(font
@@ -6273,7 +6273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 209.55 121.285 0)
 			(effects
 				(font
@@ -6283,7 +6283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 207.01 111.76 0)
 			(effects
 				(font
@@ -6382,7 +6382,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 222.25 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6392,22 +6392,22 @@
 		(fields_autoplaced yes)
 		(uuid "4d31bfa8-b4ed-4377-a0a3-effca8c4c8bd")
 		(property "Reference" "D23"
-			(at 236.22 127.0314 0)
+			(at 234.95 127.0314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 236.22 129.5714 0)
+		(property "Value" "SK6812MINI"
+			(at 234.95 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 223.52 140.97 0)
 			(effects
 				(font
@@ -6417,7 +6417,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 224.79 142.875 0)
 			(effects
 				(font
@@ -6427,7 +6427,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 222.25 133.35 0)
 			(effects
 				(font
@@ -6661,7 +6661,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 222.25 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6671,22 +6671,22 @@
 		(fields_autoplaced yes)
 		(uuid "62c0fc14-2f1c-4a25-905c-f64bb8110bce")
 		(property "Reference" "D28"
-			(at 236.22 147.3514 0)
+			(at 234.95 147.3514 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 236.22 149.8914 0)
+		(property "Value" "SK6812MINI"
+			(at 234.95 149.8914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 223.52 161.29 0)
 			(effects
 				(font
@@ -6696,7 +6696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 224.79 163.195 0)
 			(effects
 				(font
@@ -6706,7 +6706,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 222.25 153.67 0)
 			(effects
 				(font
@@ -8041,7 +8041,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 191.77 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8051,22 +8051,22 @@
 		(fields_autoplaced yes)
 		(uuid "cf77f44e-a514-4e5a-be02-1f42a58c0536")
 		(property "Reference" "D21"
-			(at 205.74 127.0314 0)
+			(at 204.47 127.0314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 205.74 129.5714 0)
+		(property "Value" "SK6812MINI"
+			(at 204.47 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 193.04 140.97 0)
 			(effects
 				(font
@@ -8076,7 +8076,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 194.31 142.875 0)
 			(effects
 				(font
@@ -8086,7 +8086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 191.77 133.35 0)
 			(effects
 				(font
@@ -8289,7 +8289,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 237.49 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8299,22 +8299,22 @@
 		(fields_autoplaced yes)
 		(uuid "d3e9f6e8-ed50-4aed-af79-8a65f9866d17")
 		(property "Reference" "D29"
-			(at 251.46 147.3514 0)
+			(at 250.19 147.3514 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 251.46 149.8914 0)
+		(property "Value" "SK6812MINI"
+			(at 250.19 149.8914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 238.76 161.29 0)
 			(effects
 				(font
@@ -8324,7 +8324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 240.03 163.195 0)
 			(effects
 				(font
@@ -8334,7 +8334,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 237.49 153.67 0)
 			(effects
 				(font
@@ -8519,7 +8519,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 252.73 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8529,22 +8529,22 @@
 		(fields_autoplaced yes)
 		(uuid "d4efc4d4-2613-4b74-969b-97b76a925d7b")
 		(property "Reference" "D20"
-			(at 266.7 105.4414 0)
+			(at 265.43 105.4414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 266.7 107.9814 0)
+		(property "Value" "SK6812MINI"
+			(at 265.43 107.9814 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 254 119.38 0)
 			(effects
 				(font
@@ -8554,7 +8554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 255.27 121.285 0)
 			(effects
 				(font
@@ -8564,7 +8564,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 252.73 111.76 0)
 			(effects
 				(font
@@ -8727,7 +8727,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 237.49 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8737,22 +8737,22 @@
 		(fields_autoplaced yes)
 		(uuid "d90bdb07-fcbc-49c2-823c-a7e5cc2134de")
 		(property "Reference" "D19"
-			(at 251.46 105.4414 0)
+			(at 250.19 105.4414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 251.46 107.9814 0)
+		(property "Value" "SK6812MINI"
+			(at 250.19 107.9814 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 238.76 119.38 0)
 			(effects
 				(font
@@ -8762,7 +8762,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 240.03 121.285 0)
 			(effects
 				(font
@@ -8772,7 +8772,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 237.49 111.76 0)
 			(effects
 				(font
@@ -8803,7 +8803,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "LED:SK6812MINI")
 		(at 252.73 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8813,22 +8813,22 @@
 		(fields_autoplaced yes)
 		(uuid "ea6567ea-23c1-4aa4-9588-7b944c0b949f")
 		(property "Reference" "D25"
-			(at 266.7 127.0314 0)
+			(at 265.43 127.0314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B-2020"
-			(at 266.7 129.5714 0)
+		(property "Value" "SK6812MINI"
+			(at 265.43 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "SkyKeypad:LED_SK6812MINI_REVERSE"
 			(at 254 140.97 0)
 			(effects
 				(font
@@ -8838,7 +8838,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 			(at 255.27 142.875 0)
 			(effects
 				(font
@@ -8848,7 +8848,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+		(property "Description" "RGB LED with integrated controller"
 			(at 252.73 133.35 0)
 			(effects
 				(font
