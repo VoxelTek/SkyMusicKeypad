@@ -6,8 +6,8 @@
 #include "USBVendor.h"
 #include "USB.h"
 #include "USBHIDKeyboard.h"
-#include "USBMIDI.h"
-#include "BLEMidi.h"
+#include "src/USBMIDI/USBMIDI.h"
+#include "src/ESP32-BLE-MIDI/src/BLEMidi.h"
 
 #define rotA_pin 11
 #define rotB_pin 10
@@ -28,6 +28,10 @@ const byte COLS = 5;
 
 const byte rowPins[ROWS] = {8, 7, 6};
 const byte colPins[COLS] = {1, 2, 3, 4, 5};
+
+int counter = 0;
+
+const String deviceName = "Sky Music Keypad";
 
 
 /*
@@ -56,7 +60,6 @@ bool forceUSB = false;
 bool forceBT = false;
 
 bool btEnabled = false;
-bool btConnected = false;
 
 bool usbStatus = false;
 
@@ -69,70 +72,96 @@ void setup() {
 
   pinMode(rotSW_pin, INPUT_PULLUP);
 
-
-  if (forceUSB) {         // Communicate over USB, no matter what
-    usbMode();
-  }
-  else if (forceBT) {     // Communicate over BT, no matter what
-    btMode();
-  }
-
   if (mode == 0) {
     static struct USBHIDKeyboard _usbKeyboard;
     usbKeyboard = &_usbKeyboard;
+    static struct BleKeyboard _bleKeyboard;
+    bleKeyboard = &_bleKeyboard;
   }
   else if (mode == 1) {
     static struct USBMIDI _MIDI;
     MIDI = &_MIDI;
   }
 
+  if (!forceBT) {         // Initialise USB
+    usbInit();
+  }
+  else if (!forceUSB) {   // Initialise BT
+    btInit();
+  }
 
 }
 
 void loop() {
   setMode();
+  if (interface == 2) {
+    sendBattery();
+  }
 }
 
 
-void usbMode() {
+void sendBattery() {
   if (mode == 0) {
-    usbKeyboard.begin();
+
+  }
+  else if (mode == 1) {
+
+  }
+}
+
+
+void usbInit() {
+  if (mode == 0) {
+    usbKeyboard->begin();
     USB.begin();
   }
   else if (mode == 1) {
 
   }
-  btEnabled = false;
-  interface = 1;
 }
 
-void btMode() {
+void btInit() {
   if (mode == 0) {
-    bleKeyboard.begin();
+    bleKeyboard->setName(deviceName);
+    bleKeyboard->begin();
   }
   else if (mode == 1) {
-    BLEMidiServer.begin("Sky Music Keypad");
+    BLEMidiServer.begin(deviceName);
   }
   btEnabled = true;
-  interface = 2;
 }
+
+
+void switchToUSB() {
+  if (interface != 1) {
+    if ((interface == 2) || (btEnabled)) {
+        if (mode == 0) {
+          bleKeyboard->stopAdvertising();
+        }
+        else if (mode == 1) {
+          
+        }
+    }
+  }
+}
+
+void switchToBT() {
+
+}
+
+
 
 
 void setMode() {
   if (!(forceUSB || forceBT)) {
     usbStatus = usbVendor.mounted();
     if (usbStatus) {            // Is USB connected?
-      if (interface != 1) {     // Have we already recorded that we're in USB mode?
-        interface = 1;          // Set mode to USB
-      }
+      switchToUSB();
       return;
     }
     else {                      // Not connected to USB
-      if (!btEnabled){          // If Bluetooth is disabled, re-enable it
-        bleKeyboard.begin();
-        btEnabled = true;
-      }
-      if (bleKeyboard.isConnected()) {  // Bluetooth device connected!
+      switchToBT();
+      if (bleKeyboard->isConnected()) {  // Bluetooth device connected!
         interface = 2;
       }
       else {                    // No BT or USB connection
@@ -148,18 +177,18 @@ void sendKey(uint8_t key, bool press = true) {
   }
   else if (interface == 1) {
     if (press) {
-      usbKeyboard.press(key);
+      usbKeyboard->press(key);
     }
     else {
-      usbKeyboard.release(key);
+      usbKeyboard->release(key);
     }
   }
   else if (interface == 2) {
     if (press) {
-      bleKeyboard.press(key);
+      bleKeyboard->press(key);
     }
     else {
-      bleKeyboard.release(key);
+      bleKeyboard->release(key);
     }
   }
 }
