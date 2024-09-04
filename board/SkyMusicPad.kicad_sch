@@ -3984,7 +3984,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 121.92 59.69 90)
 			(effects
 				(font
@@ -4201,7 +4201,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 59.69 71.12 90)
 			(effects
 				(font
@@ -4431,7 +4431,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 121.92 71.12 90)
 			(effects
 				(font
@@ -4517,7 +4517,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 100.33 71.12 90)
 			(effects
 				(font
@@ -4747,7 +4747,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 80.01 71.12 90)
 			(effects
 				(font
@@ -5320,7 +5320,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 39.37 59.69 90)
 			(effects
 				(font
@@ -6031,7 +6031,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 39.37 48.26 90)
 			(effects
 				(font
@@ -6472,7 +6472,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 80.01 59.69 90)
 			(effects
 				(font
@@ -6702,7 +6702,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 100.33 59.69 90)
 			(effects
 				(font
@@ -7334,7 +7334,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 59.69 48.26 90)
 			(effects
 				(font
@@ -7484,7 +7484,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 80.01 48.26 90)
 			(effects
 				(font
@@ -7790,7 +7790,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 59.69 59.69 90)
 			(effects
 				(font
@@ -7876,7 +7876,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 121.92 48.26 90)
 			(effects
 				(font
@@ -7962,7 +7962,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 39.37 71.12 90)
 			(effects
 				(font
@@ -8048,7 +8048,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "SkyMusic:D_MiniMELF_silkMoved"
 			(at 100.33 48.26 90)
 			(effects
 				(font
