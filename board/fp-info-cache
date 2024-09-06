@@ -1,4 +1,4 @@
-23793669514044924
+23795395346925963
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -89578,6 +89578,13 @@ LED RGB NeoPixel Mini PLCC-4 3535
 0
 4
 4
+SkyMusic
+RotaryEncoder_Bourns_Vertical_PEC12R-3x17F-Sxxxx
+Bourns rotary encoder, PEC12R, with switch, with bushing, vertical shaft, 17.5mm shaft, https://www.bourns.com/docs/product-datasheets/pec12r.pdf
+rotary encoder
+0
+7
+6
 SkyMusic
 SW_Cherry_MX_1.00u_PCB
 Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf

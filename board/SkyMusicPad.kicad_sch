@@ -4974,7 +4974,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Bourns_Vertical_PEC12R-3x17F-Sxxxx"
+		(property "Footprint" "SkyMusic:RotaryEncoder_Bourns_Vertical_PEC12R-3x17F-Sxxxx"
 			(at 138.43 115.316 0)
 			(effects
 				(font
