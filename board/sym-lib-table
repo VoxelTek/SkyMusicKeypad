@@ -4,4 +4,5 @@
   (lib (name "rp2040-zero")(type "KiCad")(uri "${KIPRJMOD}/Symbols/rp2040-zero.kicad_sym")(options "")(descr ""))
   (lib (name "MX1A-C1NN")(type "KiCad")(uri "${KIPRJMOD}/Symbols/MX1A-C1NN.kicad_sym")(options "")(descr ""))
   (lib (name "ESP32-S3-Zero")(type "KiCad")(uri "${KIPRJMOD}/ESP32-S3-Zero_KiCad/ESP32-S3-Zero.kicad_sym")(options "")(descr ""))
+  (lib (name "Waveshare-ESP32-S3-Zero")(type "KiCad")(uri "${KIPRJMOD}/ESP32-S3-Zero_KiCad/Waveshare-ESP32-S3-Zero.kicad_sym")(options "")(descr ""))
 )
