@@ -58,12 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "lib_footprint_mismatch|51605000|55035000|3cffc300-da2d-4ef8-a8c3-a75af0ae6653|00000000-0000-0000-0000-000000000000",
-          "Centered footprint"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
